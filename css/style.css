@@ -1,3 +1,24 @@
 * {
-    border: 1px solid  black;
+    /* border: 1px solid  black; */
+}
+body,
+html {
+    background-color: aqua;
+    display: flex;
+    height: 100%;
+    gap: 1em;
+}
+#main-sideBar {
+    background-color: rgb(45, 30, 96);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+.SB-intro {
+    font-size: 30px;
+}
+#yearContainer {
+    display: flex;
+    flex-direction: column;
 }

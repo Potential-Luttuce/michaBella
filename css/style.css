@@ -6,8 +6,9 @@ body,
 html {
     display: flex;
     height: 100%;
-    gap: 1em;
     margin: 0;
+    background: #D7C5DF;
+    color: white;
 }
 #main-sideBar {
     background-color: #61398F;
@@ -34,4 +35,8 @@ html {
 }
 .yearBtn:hover {
     color: rgb(23, 98, 168);
+}
+#header {
+    display: flex;
+    background: black;
 }

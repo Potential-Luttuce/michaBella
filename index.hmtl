@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="navBar">
+        <div id="links">
+            <a class="nav-link leftLink" href="">About</a>
+            <a class="nav-link" href="">Nature</a>
+        </div>
+    </div>
+    <div id="headerContainer">
+        <div id="header-txt">
+            <div id="logo">Mike's Nature Pics</div><hr>
+            <div style="font-size: 48px;">Welcome To My Site!</div>
+            <div>
+                <p>I enjoy coding and going on walks to look at 
+                    the lil creatures that live in the ponds near my home. So 
+                    I thought I would share BOTH with you.<br><br> Hope you enjoy!
+                </p>
+            </div>
+            <!-- <button class="header-bttn">Button</button>Do I need this? -->
+            - Mike
+        </div>
+        <img src="images/robot.jpg" alt="Robot" class="header-image">
+    </div>
+    <div id="cardsContainer">
+        <div class="card-info">
+            What are you waiting for?<br>
+            <p style="font-size: 12px;">(Click an item below to see more)</p></div>
+        <div id="cards">
+            <div class="card-txt"><a id="cardImage-bttn"href="html/turtlePage.html"><div id="card">
+                    <img src="images/robot.jpg" alt="Robot" class="card-image">
+                </div></a><br>
+                Turtles
+            </div>
+            <div class="card-txt"><a id="cardImage-bttn"href=""><div id="card">
+                <img src="images/robot.jpg" alt="Robot" class="card-image">
+            </div></a><br>
+            Birds
+            </div>
+            <div class="card-txt"><a id="cardImage-bttn"href=""><div id="card">
+                <img src="images/robot.jpg" alt="Robot" class="card-image">
+            </div></a><br>
+            Spiders (Not scary I promise, it's kinda cute)
+            </div>
+            <div class="card-txt"><a id="cardImage-bttn"href=""><div id="card">
+                <img src="images/robot.jpg" alt="Robot" class="card-image">
+            </div></a><br>
+            Ducks
+            </div>
+            <div class="card-txt"><a id="cardImage-bttn"href=""><div id="card">
+                <img src="images/robot.jpg" alt="Robot" class="card-image">
+            </div></a><br>
+            Other
+            </div>
+        </div>
+    </div>
+</body>
+</html>

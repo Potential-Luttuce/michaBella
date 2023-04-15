@@ -1,0 +1,91 @@
+* {
+    /* border: 1px solid aliceblue; */
+}
+html, 
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #7199a3;
+    color: #003533;
+}
+#navBar {
+    display:flex;
+    padding: 1em 6.5em 1em;
+}
+#logo,
+.card-info {
+    font-weight: 900;
+    font-size: 30px;
+}
+#links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+.nav-link:hover {
+    color: #2315e6;
+}
+.leftLink {
+    margin-left: auto;
+    margin-right: 2em;
+}
+#headerContainer {
+    background-color: #b4bfbf;
+    display: flex;
+    justify-content: center;
+    padding: 2em 2em;
+}
+#header-txt {
+    width: 50%;
+}
+.header-image,
+.header-bttn {
+    border-radius: 15px;
+}
+#header-txt,
+.header-image {
+    margin-left: auto;
+}
+
+/* CARDS CONTAINER */
+
+#cardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 2em;
+}
+.card-info {
+    text-align: center;
+}
+#cards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.card-txt {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    color: aliceblue
+}
+#card,
+.card-image {
+    height: 80px;
+    width: 80px;
+    border-radius: 15px 35px;
+}
+.card-image:hover {
+    border-radius: 35px 15px;
+}

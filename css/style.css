@@ -20,6 +20,8 @@ html {
 #indexBtn {
     font-size: 10px;
     align-self: flex-start;
+    font-size: 12px;
+    border-radius: 15px 10%;
 }
 .SB-intro {
     font-size: 30px;

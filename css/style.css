@@ -17,6 +17,10 @@ html {
     flex-direction: column;
     padding: 8px;
 }
+#indexBtn {
+    font-size: 10px;
+    align-self: flex-start;
+}
 .SB-intro {
     font-size: 30px;
 }

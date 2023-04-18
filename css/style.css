@@ -35,14 +35,17 @@ html {
     margin-top: 1em;
 }
 .yearBtn,
-.homePage {
+.homePage,
+#indexBtn {
     text-decoration: none;
     color: inherit;
 }
 .yearBtn:hover {
     color: rgb(23, 98, 168);
 }
-#header {
-    display: flex;
-    background: black;
+.header-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
+

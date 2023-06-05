@@ -1,6 +1,6 @@
 /* FOR SIDEBARS */
 * {
-    /* border: 1px solid  black; */
+    border: 1px solid  black;
 }
 body,
 html {
@@ -48,4 +48,6 @@ html {
     width: 100%;
     height: 100%;
 }
-
+#pageContent {
+    border: 1px solid red;
+}

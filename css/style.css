@@ -48,6 +48,13 @@ html {
     width: 100%;
     height: 100%;
 }
+#main-pageContent {
+    width: 100%;
+}
 #pageContent {
     border: 1px solid red;
+}
+#navBar {
+    background-color: green;
+    width: 100%;
 }

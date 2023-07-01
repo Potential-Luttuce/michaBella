@@ -8,3 +8,5 @@
  - Add button on Home to return to 'Landing'
  - fix nav bar
  - start adding content to 'content' section of page
+
+ * Edit year buttons to be round and shadowed

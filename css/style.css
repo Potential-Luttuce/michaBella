@@ -62,16 +62,18 @@ html {
 }
 
 /* PAGE */
-#main-pageContent {
+#main-pageContainer {
     display: flex;
     width: 100%;
-    border: 10px solid blue;
+    flex-direction: column;
+    /* border: 10px solid blue; */
 }
 #pageContent {
     border: 1px solid red;
-
 }
 #navBar {
     background-color: green;
     display: flex;
+    justify-content: space-between;
 }
+

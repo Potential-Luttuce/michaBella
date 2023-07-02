@@ -7,7 +7,14 @@
     - https://sweetalert.js.org/guides/
 
  > 2020 Page
- - start adding content layout to #maine-paigeContainer >  #pageContent section of page
+ - Start adding content layout to #maine-paigeContainer >  #pageContent section of page
+ - - Image than short description of event / day. 
+ --- Brings you to custom sweet alert with mreo info / breakdown of the thing
+
+
+
+
+
 <hr>
 COMPLETED TASKS SECTIONS    
 - PLEASE move completed tasks here -

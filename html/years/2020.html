@@ -5,24 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2020</title>
+<!-- link to Style Sheet -->
     <link rel="StyleSheet" href="../../css/style.css">
 <!-- BELOW LOADS SWEETALERT library for customazied window alerts -->
     <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         function customAlert() {
-            let message = `This site may cause side effects inculding but not limited to:
-            Increased feelings of love.
-            Joy and happy tears.
-            Wanting to kiss Michael.
-            Feeling cared for and appreciated. 
-            `
+            let message = `These are not the droids you speak of, move along`
           Swal.fire({
-            title: 'Woah Slow down there!',
+            title: 'Jedi Mind Tricks at play',
             text: message,
-            icon: 'warning',
-            confirmButtonText: 'Yes'
+            icon: 'error',
+            confirmButtonText: 'Move Along'
       });
     }
+
     </Script>
 </head>
 <body>
@@ -44,10 +41,11 @@
             <div id="right-links">Links Links Links</div>
         </div>
         <div id="pageContent">
-            <button onclick="customAlert()">
-                I'm a card on this page
-            </button>
+            <card class="pageCard">
+                Sup Bitch I'm a card :p
+            </card>
         </div>
+        <button onclick="customAlert()">clcik my for custom alert</button>
     </div>
 </body>
 </html>

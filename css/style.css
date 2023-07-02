@@ -1,4 +1,4 @@
-/* FOR SIDEBARS */
+/* FOR Page / general */
 * {
     /* border: 1px solid  white; */
 }
@@ -11,6 +11,7 @@ html {
     background: #D7C5DF;
     color: white;
 }
+/* SideBar ####################################################################### */
 #main-sideBar {
     background-color: #61398F;
     color: aliceblue;
@@ -61,14 +62,14 @@ html {
     height: 100%;
 }
 
-/* NAV BAR */
+/* NAV BAR #######################################################################*/
 #navBar {
     background-color: green;
     display: flex;
     justify-content: space-between;
 }
 
-/* PAGE */
+/* PAGE #######################################################################*/
 #main-pageContainer {
     display: flex;
     width: 100%;
@@ -77,10 +78,10 @@ html {
 }
 #pageContent {
     border: 1px solid red;
+    padding: 5px;
 }
 .pageCard {
     font-size: 25px;
-    color:#380275;
     border: 1px solid black;
 }
 

@@ -1,12 +1,15 @@
-# MichaBella!
+# Michaels Project! ;)
  ## ToDo:
- > Landing (New Index.HTML)
- - Add a new html doc 'landing' for main landing site,
- - ^ add simple message and content to landing
- - ^ add button to head to 'Home' page
- > General
- - Add button on Home to return to 'Landing'
- - fix nav bar
- - start adding content to 'content' section of page
+ > HomePage
+ - Add more functionality to sweetAlert -- how to get Null or True value to trigger JS events?
+ - - RESOURCES FOR SWQEETALERT()
+    - https://sweetalert2.github.io/
+    - https://sweetalert.js.org/guides/
 
- * Edit year buttons to be round and shadowed
+ > 2020 Page
+ - start adding content layout to #maine-paigeContainer >  #pageContent section of page
+<hr>
+COMPLETED TASKS SECTIONS    
+- PLEASE move completed tasks here -
+
+* 

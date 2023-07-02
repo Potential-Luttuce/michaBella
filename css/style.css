@@ -1,6 +1,6 @@
 /* FOR SIDEBARS */
 * {
-    border: 1px solid  white;
+    /* border: 1px solid  white; */
 }
 body,
 html {
@@ -61,6 +61,13 @@ html {
     height: 100%;
 }
 
+/* NAV BAR */
+#navBar {
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+}
+
 /* PAGE */
 #main-pageContainer {
     display: flex;
@@ -71,9 +78,9 @@ html {
 #pageContent {
     border: 1px solid red;
 }
-#navBar {
-    background-color: green;
-    display: flex;
-    justify-content: space-between;
+.pageCard {
+    font-size: 25px;
+    color:#380275;
+    border: 1px solid black;
 }
 

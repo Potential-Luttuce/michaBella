@@ -10,11 +10,17 @@
     <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         function customAlert() {
+            let message = `This site may cause side effects inculding but not limited to:
+            Increased feelings of love.
+            Joy and happy tears.
+            Wanting to kiss Michael.
+            Feeling cared for and appreciated. 
+            `
           Swal.fire({
-            title: 'My Custom Alert',
-            text: 'This is a custom alert message!',
-            icon: 'info',
-            confirmButtonText: 'OK'
+            title: 'Woah Slow down there!',
+            text: message,
+            icon: 'warning',
+            confirmButtonText: 'Yes'
       });
     }
     </Script>

@@ -5,8 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2020</title>
-
     <link rel="StyleSheet" href="../../css/style.css">
+<!-- BELOW LOADS SWEETALERT library for customazied window alerts -->
+    <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function customAlert() {
+          Swal.fire({
+            title: 'My Custom Alert',
+            text: 'This is a custom alert message!',
+            icon: 'info',
+            confirmButtonText: 'OK'
+      });
+    }
+    </Script>
 </head>
 <body>
     <div id="main-sideBar">
@@ -27,9 +38,9 @@
             <div id="right-links">Links Links Links</div>
         </div>
         <div id="pageContent">
-            <div class="pageCard">
+            <button onclick="customAlert()">
                 I'm a card on this page
-            </div>
+            </button>
         </div>
     </div>
 </body>

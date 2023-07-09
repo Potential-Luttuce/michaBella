@@ -12,29 +12,31 @@
         <script>
             console.log('Welcome to the HomePage. MC')
             function customAlert() {
-                let message = `This site may cause side effects inculding but not limited to:
+                let message = `This site may cause side effects 
+                inculding but not limited to:
                 Increased feelings of love.
                 Joy and happy tears.
                 Wanting to kiss Michael.
                 Feeling cared for and appreciated. 
                 `
-            swal({
-                icon: 'warning',
-                title: 'Woah Slow down there!!',
-                text: message,
-                buttons: ["oh No!!", "fuck yeah!"]
-            }).then((result) => {
-                if (result.isDenied) {
-                    window.location.href= '../index.html'
-                }
-            })
-        }
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Woah Slow down there!!',
+                    text: message,
+                    buttons: ["oh No!!", "fuck yeah!"]
+                }).then((result) => {
+                    if (result.isDenied) {
+                        window.location.href= '../index.html'
+                    }
+                })
+            }
         </Script>
 </head>
 <body onload="customAlert()">
     <div id="main-sideBar">
         <a id="indexBtn" href="../index.html">Welcome Page</a>
-        <div style="text-align: center;"><p class="SB-intro">This is the Home Page</p>
+        <div style="text-align: center;">
+            <p class="SB-intro">This is the Home Page</p>
             Click The Links to View Content.</div>
         <div id="yearContainer">
             <a class="yearBtn shadow-btn" href="years/2020.html">2020</a>

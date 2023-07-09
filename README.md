@@ -11,8 +11,10 @@
     - https://sweetalert.js.org/guides/
  ## ToDo:
 
- > Git Statu Side-Project
- - Create fun side project to guide self through saving, comminting, and pushing code
+ >Git Statu Side-Project 
+ 
+<b>STATUS  =  DONE!</b>
+ - Created Bash & Python scripts to guide me through a simple git status, git add, git commit, and 
  > HomePage
  - 
  - Really focus on github.io link

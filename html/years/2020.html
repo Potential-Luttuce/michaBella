@@ -20,11 +20,23 @@
             text: message,
             icon: 'error',
             confirmButtonText: 'Move Along',
-      });
-    }
+            });
+        }
 
-    //Javascript
-    
+        //Javascript
+        function makeCard(){
+            const card = document.createElement('div');
+            const page = document.querySelector('#pageContent');
+            card.textContent = "Hello, world!";
+            card.classList.add('Card'); 
+            page.appendChild(card);
+        }
+        function createAllCards() {
+            for (let i = 0; i < 11; i++) {
+                makeCard()
+            }
+        }
+        createAllCards();
     </Script>
 </head>
 <body>
@@ -46,11 +58,11 @@
             <div id="right-links">Links Links Links</div>
         </div>
         <div id="pageContent">
-            <card class="pageCard" onclick="customAlert()">
+            <card class="Card" onclick="customAlert()">
                 Sup Bitch I'm a card :p
             </card>
         </div>
-        <button onclick="customAlert()">clcik my for custom alert</button>
+        <button onclick="createAllCards()">clcik me to create all cards</button>
     </div>
 </body>
 </html>

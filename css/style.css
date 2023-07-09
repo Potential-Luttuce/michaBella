@@ -77,10 +77,13 @@ html {
     /* border: 10px solid blue; */
 }
 #pageContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     border: 1px solid red;
     padding: 5px;
 }
-.pageCard {
+.Card {
     font-size: 25px;
     border: 1px solid black;
 }

@@ -1,6 +1,14 @@
 # Michaels Project! ;)
 
-> > General
+> > [General Info and Resources]
+##  -RESOURCES-
+ 
+ SWQEETALERT()
+
+ * Adding custom alerts and more
+
+    - https://sweetalert2.github.io/
+    - https://sweetalert.js.org/guides/
  ## ToDo:
  > HomePage
  - Add more functionality to sweetAlert -- how to get Null or True value to trigger JS events?

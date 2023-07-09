@@ -4,7 +4,7 @@
 
 clear && git status
 
-sleep 2
+# sleep 2
 
 echo -e '\n'
 
@@ -12,10 +12,12 @@ neofetch
 
 echo "Leaving bash..."
 
-sleep 3
+sleep 1
 
 python3 git.py
 
-echo 'Entering Bash ^=^=^=^= Hello from Bash!'
+sleep 1
 
-sleep 2
+echo -e 'Entering Bash ^=^=^=^= Hello from Bash!\n'
+
+# sleep 2

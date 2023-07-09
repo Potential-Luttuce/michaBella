@@ -15,8 +15,9 @@
  
 <b>STATUS  =  DONE!</b>
  - Created Bash & Python scripts to guide me through a simple git status, git add, git commit, and 
+
  > HomePage
- - 
+ - Make Robot Image Popup slowley after Yes is selected from alert
  - Really focus on github.io link
 
  > 2020 Page

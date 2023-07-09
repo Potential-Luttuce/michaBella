@@ -25,14 +25,14 @@
 
         // Javascript//////////////////////////////////////////////////////////
         function makeCard(){
-            const card = document.createElement('div');
+            const card = document.createElement('button');
             const page = document.querySelector('#pageContent');
             card.textContent = "Hello, world!";
             card.classList.add('Card'); 
             page.appendChild(card);
         }
         function createAllCards() {
-            for (let i = 0; i < 11; i++) {
+            for (let i = 0; i < 5; i++) {
                 makeCard()
             }
         }

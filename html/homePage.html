@@ -17,12 +17,17 @@
                 Wanting to kiss Michael.
                 Feeling cared for and appreciated. 
                 `
-              Swal.fire({
+            Swal.fire({
+                icon: 'warning',
                 title: 'Woah Slow down there!!',
                 text: message,
-                icon: 'warning',
-                confirmButtonText: 'Yes'
-          });
+                confirmButtonText: 'Yes',
+                showDenyButton: true,
+            }).then((result) => {
+                if (result.isDenied) {
+                    window.location.href= '../index.html'
+                }
+            })
         }
         </Script>
 </head>

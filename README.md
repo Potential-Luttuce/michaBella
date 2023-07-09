@@ -10,8 +10,12 @@
     - https://sweetalert2.github.io/
     - https://sweetalert.js.org/guides/
  ## ToDo:
+
+ > Git Statu Side-Project
+ - Create fun side project to guide self through saving, comminting, and pushing code
  > HomePage
- - Add more functionality to sweetAlert -- how to get Null or True value to trigger JS events?
+ - 'cancel' button for homepopup
+ - Really focus on github.io link
 
  > 2020 Page
  - Start adding content layout to #maine-paigeContainer >  #pageContent section of page

@@ -12,17 +12,18 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script>
+        console.log('Welcome to the year of Covid. MC')
         // SweetAert /////////////////////////////////////////////////////////
         function customAlert() {
             let message = `These are not the droids you speak of, move along`
-          Swal.fire({
-            title: 'Jedi Mind Tricks at play',
-            text: message,
-            icon: 'error',
-            confirmButtonText: 'Move Along',
+            Swal.fire({
+                title: 'Jedi Mind Tricks at play',
+                text: message,
+                icon: 'error',
+                confirmButtonText: 'Move Along',
             });
-        }
-
+            console.log('The Dark side is coming..')
+            }
         // Javascript//////////////////////////////////////////////////////////
         function makeCard(){
             const card = document.createElement('button');

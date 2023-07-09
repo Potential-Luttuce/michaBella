@@ -13,6 +13,12 @@
 > JavaScript
 - SweetAlert2
    - Text
+
+> Bash
+
+> HTML/CSS
+
+> Git
 ##  -RESOURCES-
  
       SWQEETALERT()

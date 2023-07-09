@@ -12,6 +12,7 @@
       });
       console.log('Robot Popup viewed')
     }
+    // Custom alert
     function customAlert() {
       Swal.fire({
         icon: 'info',
@@ -21,6 +22,17 @@
         confirmButtonText: 'Move Along',
       })
       console.log('Custom Alert Viewed ')
+    }
+    // iconHTMl
+    function custom1() {
+      Swal.fire({
+        title: "Custom Icon",
+        html: '<i class="fa fa-heart" style="color: red;"></i>',
+        showCancelButton: true,
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel"
+      });
+      console.log('custom 1 was viewed')
     }
     // Javascript//////////////////////////////////////////////////////////
     function makeCard(){
@@ -40,6 +52,6 @@
 <body>
   <button onclick="customAlert()">Show Custom Alert</button>
   <button onclick="robot()">show robot</button>
-
+  <button onclick="custom1()">Custom1</button>
 </body>
 </html>

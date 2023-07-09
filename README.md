@@ -1,9 +1,21 @@
 # Michaels Project! ;)
 
 > > [General Info and Resources]
+
+## -TECH STACK-
+
+      this is cool - use it
+
+> Python:
+- OS
+   - Text
+
+> JavaScript
+- SweetAlert2
+   - Text
 ##  -RESOURCES-
  
- SWQEETALERT()
+      SWQEETALERT()
 
  * Adding custom alerts and more
 

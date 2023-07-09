@@ -9,6 +9,8 @@
     <link rel="StyleSheet" href="../../css/style.css">
 <!-- BELOW LOADS SWEETALERT library for customazied window alerts -->
     <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script>
         function customAlert() {
             let message = `These are not the droids you speak of, move along`
@@ -16,7 +18,7 @@
             title: 'Jedi Mind Tricks at play',
             text: message,
             icon: 'error',
-            confirmButtonText: 'Move Along'
+            confirmButtonText: 'Move Along',
       });
     }
 
@@ -41,7 +43,7 @@
             <div id="right-links">Links Links Links</div>
         </div>
         <div id="pageContent">
-            <card class="pageCard">
+            <card class="pageCard" onclick="customAlert()">
                 Sup Bitch I'm a card :p
             </card>
         </div>

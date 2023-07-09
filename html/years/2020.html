@@ -36,10 +36,10 @@
                 makeCard()
             }
         }
-        createAllCards();
+        // createAllCards();
     </Script>
 </head>
-<body>
+<body onload="createAllCards()">
     <div id="main-sideBar">
         <div><p class="SB-intro">Here is some Text:</p>
             Click The Links to View Content.</div>
@@ -58,11 +58,11 @@
             <div id="right-links">Links Links Links</div>
         </div>
         <div id="pageContent">
-            <card class="Card" onclick="customAlert()">
-                Sup Bitch I'm a card :p
-            </card>
+           
         </div>
-        <button onclick="createAllCards()">clcik me to create all cards</button>
+        <div id="footer">
+            <button onclick="customAlert()">clcik me to show allert</button>
+        </div>
     </div>
 </body>
 </html>

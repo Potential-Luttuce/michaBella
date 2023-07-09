@@ -84,6 +84,9 @@ html {
     padding: 5px;
 }
 .Card {
+    display: flex;
+    margin: 1.5em;
+    background-color: black;
     font-size: 25px;
     border: 1px solid black;
 }

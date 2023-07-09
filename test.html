@@ -4,17 +4,40 @@
   <title>Custom Alert</title>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
-    function customAlert() {
-      Swal.fire({
-        title: 'My Custom Alert',
-        text: 'This is a custom alert message!',
-        icon: 'info',
-        confirmButtonText: 'OK'
-      });
-    }
+     function robots() {
+            Swal.fire({
+                imageUrl: 'images/robot.jpg',
+
+            });
+            console.log('Robot Popup viewed')
+            }
+        function customAlert() {
+            Swal.fire({
+                icon: 'info',
+                title: 'Hi! I\'m a custom Alert',
+                text: 'I\'m some description text',
+                confirmButtonText: 'Move Along',
+            })
+            console.log('Custom Alert Viewed ')
+        }
+        // Javascript//////////////////////////////////////////////////////////
+        function makeCard(){
+            const card = document.createElement('button');
+            const page = document.querySelector('#pageContent');
+            card.textContent = "Hello, world!";
+            card.classList.add('Card'); 
+            page.appendChild(card);
+        }
+        function createAllCards() {
+            for (let i = 0; i < 5; i++) {
+                makeCard()
+            }
+        }
   </script>
 </head>
 <body>
   <button onclick="customAlert()">Show Custom Alert</button>
+  <button onclick="robots()">show robot</button>
+
 </body>
 </html>

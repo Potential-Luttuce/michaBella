@@ -94,3 +94,9 @@ html {
     color: aliceblue
 }
 
+/* FOOTER #######################################################################*/
+#footer {
+    display:inline-block;
+    flex-direction: column;
+}
+

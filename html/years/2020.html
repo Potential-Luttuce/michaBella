@@ -12,31 +12,37 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script>
-        // SweetAert 
-        function customAlert() {
-            let message = `These are not the droids you speak of, move along`
-          Swal.fire({
-            title: 'Jedi Mind Tricks at play',
-            text: message,
-            icon: 'error',
-            confirmButtonText: 'Move Along',
-            });
-        }
+        console.log('Welcome to the year of Covid. MC')
+        // SweetAert /////////////////////////////////////////////////////////
+        function robots() {
+            Swal.fire({
+                imageUrl: '../../images/robot.jpg',
 
-        //Javascript
+            });
+            console.log('Robot Popup viewed')
+            }
+        function customAlert() {
+            Swal.fire({
+                icon: 'info',
+                title: 'Hi! I\'m a custom Alert',
+                text: 'I\'m some description text',
+                confirmButtonText: 'Move Along',
+            })
+            console.log('Custom Alert Viewed ')
+        }
+        // Javascript//////////////////////////////////////////////////////////
         function makeCard(){
-            const card = document.createElement('div');
+            const card = document.createElement('button');
             const page = document.querySelector('#pageContent');
             card.textContent = "Hello, world!";
             card.classList.add('Card'); 
             page.appendChild(card);
         }
         function createAllCards() {
-            for (let i = 0; i < 11; i++) {
+            for (let i = 0; i < 5; i++) {
                 makeCard()
             }
         }
-        // createAllCards();
     </Script>
 </head>
 <body onload="createAllCards()">
@@ -57,11 +63,10 @@
             <div id="pageTitle"> The year was 2020 and it was wild</div>
             <div id="right-links">Links Links Links</div>
         </div>
-        <div id="pageContent">
-           
-        </div>
+        <div id="pageContent"></div>
         <div id="footer">
-            <button onclick="customAlert()">clcik me to show allert</button>
+            <button onclick="robots()">clcik me to show robots</button>
+            <button onclick="customAlert()">custom Alert</button>
         </div>
     </div>
 </body>

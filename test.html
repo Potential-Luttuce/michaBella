@@ -1,20 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Custom Alert</title>
+  <title>Test | Custom Alerts</title>
+  <style>
+    body,
+    html {
+      background-color: #454545;
+    }
+    button {
+      background-color: #0085ff;
+      color: aliceblue;
+      font-size: 30px;
+    }
+    body {
+      display: flex;
+      justify-content: flex-end;
+    }
+  </style>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
+    // SweetAlerts() //////////////////////////////////////////////////////////
+    // Show Robot
+    function robot() {
+      Swal.fire({
+        imageUrl: 'images/robot.jpg',
+      });
+      console.log('Robot Popup viewed')
+    }
+    // Custom alert
     function customAlert() {
       Swal.fire({
-        title: 'My Custom Alert',
-        text: 'This is a custom alert message!',
         icon: 'info',
-        confirmButtonText: 'OK'
+        iconColor: 'blue',
+        title: 'Hi! I\'m a custom Alert',
+        text: 'I\'m some description text',
+        confirmButtonText: 'Move Along',
+      })
+      console.log('Custom Alert Viewed ')
+    }
+    // iconHTMl
+    function custom1() {
+      Swal.fire({
+        title: "Custom Icon",
+        html: '<i class="fa fa-heart" style="color: red;"></i>',
+        showCancelButton: true,
+        confirmButtonText: "OK",
+        cancelButtonText: "Cancel"
       });
+      console.log('custom 1 was viewed')
+    }
+    // Javascript//////////////////////////////////////////////////////////
+    function makeCard(){
+      const card = document.createElement('button');
+      const page = document.querySelector('#pageContent');
+      card.textContent = "Hello, world!";
+      card.classList.add('Card'); 
+      page.appendChild(card);
+    }
+    function createAllCards() {
+      for (let i = 0; i < 5; i++) {
+        makeCard()
+      }
     }
   </script>
 </head>
 <body>
   <button onclick="customAlert()">Show Custom Alert</button>
+  <button onclick="robot()">show robot</button>
+  <button onclick="custom1()">Custom1</button>
 </body>
 </html>

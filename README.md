@@ -18,10 +18,9 @@
  - Really focus on github.io link
 
  > 2020 Page
- - Start adding content layout to #maine-paigeContainer >  #pageContent section of page
- Do this via js oncload() function for html like laert in home page..
+ - Make buttons into long sweet alert
  - - Image than short description of event / day. 
- --- Brings you to custom sweet alert with mreo info / breakdown of the thing
+ ---  Brings you to custom sweet alert with mreo info / breakdown of the thing
 
 
 

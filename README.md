@@ -29,11 +29,6 @@
     - https://sweetalert.js.org/guides/
  ## ToDo:
 
- >Git Statu Side-Project 
- 
-<b>STATUS  =  DONE!</b>
- - Created Bash & Python scripts to guide me through a simple git status, git add, git commit, and 
-
  > HomePage
  - How to get popup to populate once per browser / window? (wont popup again unless browser / tab is closed and site opened again) will not popup if popup has laready ogne off during 'instance' of tab being open..?
  - Make Robot Image Popup slowley after Yes is selected from alert
@@ -43,13 +38,12 @@
  - Figure out a way to get each card to have a onclcik attribute for popup
  - - Image than short description of event / day. 
  --- Brings you to custom sweet alert with mreo info / breakdown of the thing
+ 
+ 
+         Side Projects:
 
 
-
-
-
-<hr>
-COMPLETED TASKS SECTIONS    
-- PLEASE move completed tasks here -
-
-* 
+ >Git Statu Side-Project 
+ 
+<b>STATUS  =  DONE!</b>
+ - Created Bash & Python scripts to guide me through a simple git status, git add, git commit, and 

@@ -93,6 +93,10 @@ html {
     border: 1px solid black;
     color: aliceblue
 }
+.Card:hover {
+    background-color: indigo;
+    cursor: zoom-in;
+}
 
 /* FOOTER #######################################################################*/
 #footer {

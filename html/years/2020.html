@@ -31,16 +31,23 @@
             console.log('Custom Alert Viewed ')
         }
         // Javascript//////////////////////////////////////////////////////////
-        function makeCard(){
+        function makeCard(index){
             const card = document.createElement('button');
             const page = document.querySelector('#pageContent');
-            card.textContent = "Hello, world!";
+            card.textContent = index;
             card.classList.add('Card'); 
             page.appendChild(card);
+
+            card.addEventListener('click', function() {
+                //SWAL or...
+                console.log(index + ' Element clicked')
+            })
+
+
         }
         function createAllCards() {
             for (let i = 0; i < 5; i++) {
-                makeCard()
+                makeCard(i) //Passing in i as a variable to use
             }
         }
     </Script>

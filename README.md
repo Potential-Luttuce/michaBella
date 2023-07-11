@@ -36,7 +36,7 @@
 
  > 2020 Page
 <<<<<<< HEAD
- - Make buttons into long sweet alert
+ - buttons created! - make buttons into long sweet alert
  - - Image than short description of event / day. 
  ---  Brings you to custom sweet alert with mreo info / breakdown of the thing
 =======

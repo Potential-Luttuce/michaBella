@@ -10,23 +10,20 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body onload="heart()">
-    <div id="navBar"></div>
+<body onload="loadFunctions()">
+    <!-- <div id="navBar">Nav</div> -->
     <div id="headerContainer">
         <div id="header-txt">
-            <div style="font-size: 48px;">
-            Hey!</div>
-            <div>
-                <p>I enjoy coding and going on walks to look at 
+            <div id="text"><div id="textBox" style="font-size: 48px;">Hey!</div>
+            <p>I enjoy coding and going on walks to look at 
                     the lil creatures that live in the ponds near my home. 
                     So I thought I would share BOTH with you.
-                    <br><br> Hope you enjoy!
-                </p>
-            </div>
-            <!-- <button class="header-bttn">Button</button>Do I need this? -->
-            - Mike
+                <br><br> Hope you enjoy! <br>- Mike
+            </p></div>
         </div>
         <img src="images/MB header.JPG" alt="Header Image" class="header-image">
+        <!-- <img src="https://photos.google.com/photo/AF1QipOBqPQ92py7tSV-plqx6f-IGoQtIN3d-YHhgeK1"
+        alt="Header Image"> -->
     </div>
     <div id="messageContainer">
         <div class="card-info">
@@ -39,6 +36,10 @@
     <!-- Scripts -->
     <script>
         console.log('Welcome to my Site. MC');
+        function loadFunctions() {
+            heart();
+            gallery();
+        }
         function heart() {
             console.log('hear function has been loaded')
             const heart = document.querySelector('#heart');
@@ -53,14 +54,30 @@
             });
         }
 
-        // heart.addEventListener('mouseover', function() {
-        //     heart.classList.add('animate__animated')
-        //     heart.classList.add('animate__bounce')
-        // })
-        // heart.addEventListener('mouseout', function() {
-        //     heart.classList.add('animate__animated')
-        //     heart.classList.add('animate__bounce')
-        // })
+        function gallery() {
+            // 1 Move text down
+            const container = document.querySelector('#header-txt')
+            const firstchild = document.getElementById('#text')
+            const gallery = document.createElement('div')
+            gallery.classList.add('gallery')
+            gallery.classList.add('animate__animated');
+            gallery.classList.add('animate__fadeInLeftBig');
+            container.appendChild(gallery)
+
+            function viewGallery() {
+                var container = document.getElementsByClassName('gallery'); 
+                fileArray = 'mb/';
+                fileArray.forEach(function (file) {
+                    var img = document.createElement('img');
+                    img.src = file.url;
+                    container.appendChild(img); // Add the image to the container
+                    setTimeout(function () {
+                        setTimeout(function () {
+                        }, /* fade-out duration */);
+                    }, /* 5 seconds delay */);
+                });
+            }
+        }
     </script>
 </body>
 </html>

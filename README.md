@@ -32,6 +32,12 @@
     - https://sweetalert.js.org/guides/
  ## ToDo:
 
+
+ >Index
+ - Make text section float down and let 10-15 pictures rotate through
+
+
+
  > HomePage
  - How to get popup to populate once per browser / window? (wont popup again unless browser / tab is closed and site opened again) will not popup if popup has laready ogne off during 'instance' of tab being open..?
  - Make Robot Image Popup slowley after Yes is selected from alert

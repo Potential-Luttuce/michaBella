@@ -4,8 +4,6 @@
 
 ## -TECH STACK-
 
-      this is cool - use it
-
 > Python:
 - OS
    - Text

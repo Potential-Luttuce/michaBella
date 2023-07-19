@@ -37,13 +37,10 @@
             card.textContent = index;
             card.classList.add('Card'); 
             page.appendChild(card);
-
             card.addEventListener('click', function() {
                 //SWAL or...
                 console.log(index + ' Element clicked')
             })
-
-
         }
         function createAllCards() {
             for (let i = 1; i < 13; i++) {

@@ -100,3 +100,12 @@ body {
     transform: rotate(45deg); 
     transform-origin :100% 100%; 
 }
+
+#heart.animate__animated {
+    animation-duration: 1s;
+  }
+
+#heart.animate__bounce {
+    animation-name: bounce;
+}
+  

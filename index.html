@@ -38,7 +38,7 @@
         console.log('Welcome to my Site. MC');
         function loadFunctions() {
             heart();
-            gallery();
+            displayMichabella()
         }
         function heart() {
             console.log('hear function has been loaded')
@@ -53,30 +53,16 @@
                 heart.classList.remove('animate__bounce');
             });
         }
-
-        function gallery() {
-            // 1 Move text down
+        function displayMichabella() {
             const container = document.querySelector('#header-txt')
-            const firstchild = document.getElementById('#text')
             const gallery = document.createElement('div')
             gallery.classList.add('gallery')
             gallery.classList.add('animate__animated');
             gallery.classList.add('animate__fadeInLeftBig');
-            container.appendChild(gallery)
+            // gallery.style.backgroundImage = 'url("images/Michabella.JPG")';
+            gallery.style.backgroundImage = 'url("images/robot.jpg")';
 
-            function viewGallery() {
-                var container = document.getElementsByClassName('gallery'); 
-                fileArray = 'mb/';
-                fileArray.forEach(function (file) {
-                    var img = document.createElement('img');
-                    img.src = file.url;
-                    container.appendChild(img); // Add the image to the container
-                    setTimeout(function () {
-                        setTimeout(function () {
-                        }, /* fade-out duration */);
-                    }, /* 5 seconds delay */);
-                });
-            }
+            container.appendChild(gallery)
         }
     </script>
 </body>

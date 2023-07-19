@@ -38,7 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1.5em;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     gap: 1.5em;
 }
 .header-image {
@@ -51,7 +51,7 @@ body {
     margin-left: auto;
 }
 #text {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     align-self: flex-end;
 }
 .gallery {
@@ -62,12 +62,16 @@ body {
     /* width: 25%; */
     height: 100%;
     animation-duration: 2s;
-    border: 1px solid red;
 }
-
 .gallery.animate__fadeInLeftBig {
     animation-name: fadeInLeftBig;
 }
+.gallery.animate__animated2 {
+    /* width: 25%; */
+    height: 100%;
+    animation-duration: 5s;
+}
+
 
 /* CARDS CONTAINER */
 

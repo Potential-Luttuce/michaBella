@@ -18,6 +18,11 @@
 
 > Git
 ##  -RESOURCES-
+      
+      Animate.Style
+
+ * Adding animation to page
+ https://animate.style/
  
       SWQEETALERT()
 

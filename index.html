@@ -9,12 +9,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- Scripts -->
-    <script>
-        console.log('Welcome to my Site. MC')
-    </script>
 </head>
-<body>
+<body onload="heart()">
     <div id="navBar"></div>
     <div id="headerContainer">
         <div id="header-txt">
@@ -36,9 +32,35 @@
         <div class="card-info">
             What are you waiting for?<br>
             <p style="font-size: 12px;" class="circleContainer">
-                (Click the circle below to continue)</p>
+                (Click The Heart To Continue)</p>
         </div>
-        <a href="html/homePage.html" id="heart" class="animate__animated animate__bounce"></a>
+        <a href="html/homePage.html" id="heart"></a>
     </div>
+    <!-- Scripts -->
+    <script>
+        console.log('Welcome to my Site. MC');
+        function heart() {
+            console.log('hear function has been loaded')
+            const heart = document.querySelector('#heart');
+            heart.addEventListener('mouseover', function() {
+                heart.classList.add('animate__animated');
+                heart.classList.add('animate__bounce');
+            });
+
+            heart.addEventListener('mouseout', function() {
+                heart.classList.remove('animate__animated');
+                heart.classList.remove('animate__bounce');
+            });
+        }
+
+        // heart.addEventListener('mouseover', function() {
+        //     heart.classList.add('animate__animated')
+        //     heart.classList.add('animate__bounce')
+        // })
+        // heart.addEventListener('mouseout', function() {
+        //     heart.classList.add('animate__animated')
+        //     heart.classList.add('animate__bounce')
+        // })
+    </script>
 </body>
 </html>

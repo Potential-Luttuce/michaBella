@@ -90,7 +90,7 @@ html {
     margin: 1.5em;
     background-color: black;
     font-size: 25px;
-    border: 1px solid black;
+    border: 1px solid aliceblue;
     color: aliceblue
 }
 .Card:hover {

@@ -16,16 +16,15 @@
             function customAlert() {
                 let message = `This site may cause side effects 
                 inculding but not limited to:
-                Increased feelings of love.
-                Joy and happy tears.
-                Wanting to kiss Michael.
+                Increased feelings of love,
+                Joy, happy tears,
+                Wanting to kiss Michael,
                 Feeling cared for and appreciated. 
                 `
                 Swal.fire({
                     icon: 'warning',
                     title: 'Woah Slow down there!!',
-                    text: message,
-                    buttons: ["oh No!!", "fuck yeah!"]
+                    text: message
                 }).then((result) => {
                     if (result.isDenied) {
                         window.location.href= '../index.html'

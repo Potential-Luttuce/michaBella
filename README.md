@@ -44,19 +44,7 @@
  - Really focus on github.io link
 
  > 2020 Page
-<<<<<<< HEAD
- - buttons created! - make buttons into long sweet alert
- - - Image than short description of event / day. 
- ---  Brings you to custom sweet alert with mreo info / breakdown of the thing
-=======
- - Figure out a way to get each card to have a onclcik attribute for popup
- - - Image than short description of event / day. 
- --- Brings you to custom sweet alert with mreo info / breakdown of the thing
- 
- 
-         Side Projects:
->>>>>>> 2150c6881e18b2aeb6dcd625f4757e253c4e1e43
-
+  - make custom alert that dynamicly grabs card# data for that exact card
 
  >Git Statu Side-Project 
  

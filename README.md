@@ -34,7 +34,7 @@
 
 
  >Index
- - Make text section float down and let 10-15 pictures rotate through
+ - Edit Michabella picture to be centered 
 
 
 

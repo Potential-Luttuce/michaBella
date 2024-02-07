@@ -34,7 +34,6 @@
 
 
  >Index
- - Edit Michabella picture to be centered 
 
 
 

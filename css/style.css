@@ -1,4 +1,4 @@
-/* FOR Page / general */
+/* FOR HomePage / general */
 * {
     /* border: 1px solid  white; */
 }
@@ -64,10 +64,15 @@ html {
 
 /* NAV BAR #######################################################################*/
 #navBar {
-    background-color: green;
+    background-color: aliceblue;
+    color: black;
+    font-weight: 900;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    padding: .25em;
 }
+
 
 /* PAGE #######################################################################*/
 #main-pageContainer {

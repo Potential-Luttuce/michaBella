@@ -22,7 +22,7 @@ body {
     font-weight: 900;
     font-size: 30px;
 }
-#headerContainer { /* removing this is cool */
+#headerContainer { 
     background-color: #dca4cc;
     display: flex;
     justify-content: center;
@@ -30,6 +30,7 @@ body {
     color: black;
     border-radius: 25%;
     height: 75%;
+    width: 50%; 
     align-self: center;
 }
 #header-txt {

@@ -1,6 +1,6 @@
 //JS FILE FOR CARDS DATA
 
-const cardData = [
+const cardsData = [
     {id: 'card1', name: 'Card One', img: '', text: 'Test Text'}
     ,{id: 'card2', name: 'Card Two', img: '', text: 'Test Text'}
     ,{id: 'card3', name: 'Card Three', img: '', text: 'Test Text'}
@@ -8,4 +8,4 @@ const cardData = [
     ,{id: 'card5', name: 'Card Five', img: '', text: 'Test Text'}
 ];
 
-export default cardData;
+export { cardsData }

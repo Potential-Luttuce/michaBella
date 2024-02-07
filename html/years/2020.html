@@ -12,7 +12,7 @@
 <!-- BELOW LOADS SWEETALERT library for customazied window alerts -->
     <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type = 'text/javascript' src='../../js/cardsData'></script>
+    <script src = '../../js/cardsData.js'defer></script>
 
     <script>
         console.log('Welcome to the year of Covid. MC')
@@ -39,18 +39,20 @@
             console.log('Custom Alert Viewed ')
         }
         // Javascript//////////////////////////////////////////////////////////
+
         function makeCard(name, cardId, handleClick){
             const card = document.createElement('button');
             const page = document.querySelector('#pageContent');
-            // card.textContent = index;
-            card.id = cardId
             card.classList.add('Card'); 
+
+            card.id = cardId
+            card.textContent = name
             card.onclick = handleClick
             page.appendChild(card);
             
         }
         function createAllCards() {
-            for (const {id, name, img, text} of cardData) {
+            for (const {id, name, img, text} of cardsData) {
                 const handleClick = () => robots()
                 makeCard(name, `card${i + 1}`, handleClick) //Passing in i as a variable to use
             }

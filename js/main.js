@@ -1,4 +1,3 @@
-//JS FILE FOR CARDS DATA
 const cardData = require('./cardsData.js');
 
         console.log('Welcome to the year of Covid. MC')
@@ -50,14 +49,3 @@ function createAllCards() {
         makeCard(text, id, clickHandler);
     }
 }
-
-
-const cardData = [
-    { id: 'card1', text: 'Card 1 Text' },
-    { id: 'card2', text: 'Card 2 Text' },
-    { id: 'card3', text: 'Card 3 Text' },
-    { id: 'card4', text: 'Card 4 Text' },
-    { id: 'card5', text: 'Card 5 Text' }
-];
-
-module.exports = cardData;

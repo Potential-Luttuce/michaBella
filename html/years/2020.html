@@ -12,51 +12,12 @@
 <!-- BELOW LOADS SWEETALERT library for customazied window alerts -->
     <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src = '../../js/cardsData.js'defer></script>
+    <script src = '../../js/cardsData.js'></script>
 
     <script>
-        console.log('Welcome to the year of Covid. MC')
-        // SweetAert /////////////////////////////////////////////////////////
-        function robots() {
-            Swal.fire({
-                imageUrl: '../../images/robot.jpg',
-                showClass: {
-                    popup: 'animate__animated animate__fadeInDown'
-                },
-                hideClass: {
-                    popup: 'animate__animated animate__fadeOutUp'
-                }
-            });
-            console.log('Robot Popup viewed')
-            }
-        function customAlert() {
-            Swal.fire({
-                icon: 'info',
-                title: 'Hi! I\'m a custom Alert',
-                text: 'I\'m some description text',
-                confirmButtonText: 'Move Along',
-            })
-            console.log('Custom Alert Viewed ')
-        }
-        // Javascript//////////////////////////////////////////////////////////
-
-        function makeCard(name, cardId, handleClick){
-            const card = document.createElement('button');
-            const page = document.querySelector('#pageContent');
-            card.classList.add('Card'); 
-
-            card.id = cardId
-            card.textContent = name
-            card.onclick = handleClick
-            page.appendChild(card);
-            
-        }
-        function createAllCards() {
-            for (const {id, name, img, text} of cardsData) {
-                const handleClick = () => robots()
-                makeCard(name, `card${i + 1}`, handleClick) //Passing in i as a variable to use
-            }
-        }
+        import * from '../../js/main.js'
+        import cardsData from'../../js/cardsDara.js'
+        
     </Script>
 </head>
 <body onload="createAllCards()">

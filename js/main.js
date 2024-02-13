@@ -56,7 +56,7 @@ function createAllCards(dataMatrix) {
     }
 }
 
-// DATA FOR ALL CARDS
+// DATA FOR ALL CARDS via years
 const cardData2020 = [
     // 2020
     { id: 'card1', title: 'Some Light Thrifting', img: '../../images/2020/mike-at-garment.jpg',

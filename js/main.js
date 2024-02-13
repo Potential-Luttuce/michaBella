@@ -70,6 +70,20 @@ const cardData = [
     { id: 'card5', title: 'A Bad Day To Be Shoes', img: '../../images/2020/broken-shoes.jpg',
     desc: "Ah yes, the garment district!! :)" },
     { id: 'card6', title: 'A Light Selfie', img: '../../images/2020/light-selfie.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card7', title: 'You...Give Me Wings', img: '../../images/2020/mikes-wings.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card8', title: 'Too Close For Comfort', img: '../../images/2020/couch-selfie.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card9', title: 'Naughty AND Nice', img: '../../images/2020/goodvsevil.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card10', title: 'Some-ting-sweet', img: '../../images/2020/something-sweet.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card11', title: 'Newbury Adventures', img: '../../images/2020/cartier.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card12', title: 'A Christmas Miracle!', img: '../../images/2020/christmas-card.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card13', title: 'Grogu Green', img: '../../images/2020/grogu-green.jpg',
     desc: "Ah yes, the garment district!! :)" }
     //2021
     //2022

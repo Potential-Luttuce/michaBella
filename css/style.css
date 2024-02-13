@@ -96,7 +96,8 @@ html {
     background-color: black;
     font-size: 25px;
     border: 1px solid aliceblue;
-    color: aliceblue
+    color: aliceblue;
+    font-size: small;
 }
 .Card:hover {
     background-color: indigo;

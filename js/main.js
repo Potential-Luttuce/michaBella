@@ -39,12 +39,12 @@ function makeCard(textContent, cardId, clickHandler) {
 }
 //USES CARDDATS DATA ARRAY TO MAKE MULTIPEL CARDS   
 function createAllCards() {
-    for (const { id, text, img} of cardData) {
+    for (const { id, title, img, desc} of cardData) {
         // Pass unique text content, ID, and onclick handler for each card
         const clickHandler = () => //
         Swal.fire({
             imageUrl: img,
-            text: 'A Heartfelt personal message - dependent on the img',
+            text: desc,
             showClass: {
                 popup: 'animate__animated animate__fadeInDown'
             },
@@ -52,16 +52,28 @@ function createAllCards() {
                 popup: 'animate__animated animate__fadeOutUp'
             }
         });
-        makeCard(text, id, clickHandler);
+        makeCard(title, id, clickHandler);
     }
 }
 
 // DATA FOR ALL CARDS
 const cardData = [
-    { id: 'card1', text: 'Card 1 Text', img:  '../../images/Michabella.jpg'},
-    { id: 'card2', text: 'Card 2 Text' },
-    { id: 'card3', text: 'Card 3 Text' },
-    { id: 'card4', text: 'Card 4 Text' },
-    { id: 'card5', text: 'Card 5 Text' }
+    // 2020
+    { id: 'card1', title: 'Some Light Thrifting', img: '../../images/2020/mike-at-garment.jpg',
+    desc: "Ah yes, the garment district!! :)"},
+    { id: 'card2', title: 'You\'re Favorite View!', img: '../../images/2020/memDrive.png',
+    desc: "Ah yes, mem drive!! :)" },
+    { id: 'card3', title: 'Ojitos Lindos', img: '../../images/2020/ojitos-lindos.jpg',
+    desc: "Ah yes, tour first pic :)" },
+    { id: 'card4', title: 'The Sweet Beginning', img: '../../images/2020/our-first-pic.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card5', title: 'A Bad Day To Be Shoes', img: '../../images/2020/broken-shoes.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card6', title: 'A Light Selfie', img: '../../images/2020/light-selfie.jpg',
+    desc: "Ah yes, the garment district!! :)" }
+    //2021
+    //2022
+    //2023
+    //2024
 ];
 

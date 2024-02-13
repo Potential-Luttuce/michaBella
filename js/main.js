@@ -38,8 +38,8 @@ function makeCard(textContent, cardId, clickHandler) {
     page.appendChild(card);
 }
 //USES CARDDATS DATA ARRAY TO MAKE MULTIPEL CARDS   
-function createAllCards() {
-    for (const { id, title, img, desc} of cardData) {
+function createAllCards(dataMatrix) {
+    for (const { id, title, img, desc} of dataMatrix) {
         // Pass unique text content, ID, and onclick handler for each card
         const clickHandler = () => //
         Swal.fire({
@@ -57,7 +57,7 @@ function createAllCards() {
 }
 
 // DATA FOR ALL CARDS
-const cardData = [
+const cardData2020 = [
     // 2020
     { id: 'card1', title: 'Some Light Thrifting', img: '../../images/2020/mike-at-garment.jpg',
     desc: "Ah yes, the garment district!! :)"},
@@ -85,9 +85,13 @@ const cardData = [
     desc: "Ah yes, the garment district!! :)" },
     { id: 'card13', title: 'Grogu Green', img: '../../images/2020/grogu-green.jpg',
     desc: "Ah yes, the garment district!! :)" }
-    //2021
     //2022
     //2023
     //2024
 ];
+const cardData2021 = [
+    //2021
+    { id: 'card1', title: 'See..there WAS a Reef!', img: '../../images/2021/lighthouse-reef.jpg',
+    desc: "Ah yes, the garment district!! :)" }
+]
 

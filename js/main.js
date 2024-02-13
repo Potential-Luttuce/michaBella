@@ -85,13 +85,26 @@ const cardData2020 = [
     desc: "Ah yes, the garment district!! :)" },
     { id: 'card13', title: 'Grogu Green', img: '../../images/2020/grogu-green.jpg',
     desc: "Ah yes, the garment district!! :)" }
-    //2022
-    //2023
-    //2024
 ];
 const cardData2021 = [
     //2021
-    { id: 'card1', title: 'See..there WAS a Reef!', img: '../../images/2021/lighthouse-reef.jpg',
+    // { id: 'card', title: '', img: '../../images/2021/.jpg',
+    // desc: "Ah yes, the garment district!! :)" }
+    { id: 'card1', title: 'See..There WAS a Reef!', img: '../../images/2021/lighthouse-reef.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card2', title: 'When I\m Wit You', img: '../../images/2021/napping.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card3', title: 'Yum Yum Yum!', img: '../../images/2021/hibatchi1.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card4', title: 'Vive El Perreo!', img: '../../images/2021/goofy.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card5', title: 'Focusing On You', img: '../../images/2021/nocta.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card6', title: 'Lean On Me!!', img: '../../images/2021/leaning.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card7', title: 'The Color Of The Day Is..', img: '../../images/2021/good-pic.jpg',
+    desc: "Ah yes, the garment district!! :)" },
+    { id: 'card8', title: 'We Love Imporv Dates', img: '../../images/2021/date.jpg',
     desc: "Ah yes, the garment district!! :)" }
 ]
 

@@ -39,16 +39,26 @@ function makeCard(textContent, cardId, clickHandler) {
 }
 //USES CARDDATS DATA ARRAY TO MAKE MULTIPEL CARDS   
 function createAllCards() {
-    for (const { id, text } of cardData) {
+    for (const { id, text, img} of cardData) {
         // Pass unique text content, ID, and onclick handler for each card
-        const clickHandler = () => alert(`Button ${id} clicked!`);
+        const clickHandler = () => //
+        Swal.fire({
+            imageUrl: img,
+            text: 'A Heartfelt personal message - dependent on the img',
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
+        });
         makeCard(text, id, clickHandler);
     }
 }
 
 // DATA FOR ALL CARDS
 const cardData = [
-    { id: 'card1', text: 'Card 1 Text' },
+    { id: 'card1', text: 'Card 1 Text', img:  '../../images/Michabella.jpg'},
     { id: 'card2', text: 'Card 2 Text' },
     { id: 'card3', text: 'Card 3 Text' },
     { id: 'card4', text: 'Card 4 Text' },

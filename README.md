@@ -49,7 +49,7 @@
 
  > 2020 Page
   - make custom alert that dynamicly grabs card# data for that exact card
-
+  - Work in progres!!
  >Git Statu Side-Project 
  
 <b>STATUS  =  DONE!</b>

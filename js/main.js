@@ -100,23 +100,33 @@ const cardData2020 = [
 ];
 const cardData2021 = [
     //2021
-    // { id: 'card', title: '', img: '../../images/2021/.jpg',
-    // desc: "Ah yes, the garment district!! :)" }
+
     { id: 'card1', title: 'See..There WAS a Reef!', img: '../../images/2021/lighthouse-reef.jpg',
-    desc: "Ah yes, the garment district!! :)" },
+        desc: `This picture is so cute! And yo this did jip us. They always put a reef on` },
     { id: 'card2', title: 'When I\m Wit You', img: '../../images/2021/napping.jpg',
-    desc: "Ah yes, the garment district!! :)" },
+        desc: "Ah yes, the garment district!! :)" },
     { id: 'card3', title: 'Yum Yum Yum!', img: '../../images/2021/hibatchi1.jpg',
-    desc: "Ah yes, the garment district!! :)" },
+        desc: `On this night we both discovered we share a love for dinner and a show` },
     { id: 'card4', title: 'Vive El Perreo!', img: '../../images/2021/goofy.jpg',
-    desc: "Ah yes, the garment district!! :)" },
+        desc: "Ah yes, the garment district!! :)" },
     { id: 'card5', title: 'Focusing On You', img: '../../images/2021/nocta.jpg',
-    desc: "Ah yes, the garment district!! :)" },
+        desc: `Our mini vacation up to Manchester, this pic has always gone hard` },
     { id: 'card6', title: 'Lean On Me!!', img: '../../images/2021/leaning.jpg',
-    desc: "Ah yes, the garment district!! :)" },
+        desc: `Lmao this one is random but soo soo funny` },
     { id: 'card7', title: 'The Color Of The Day Is..', img: '../../images/2021/good-pic.jpg',
-    desc: "Ah yes, the garment district!! :)" },
+        desc: `I know this is one of your favorite photos of us.It's grown on me so much
+            its swoly become one of my favorites.` },
     { id: 'card8', title: 'We Love Imporv Dates', img: '../../images/2021/date.jpg',
-    desc: "Ah yes, the garment district!! :)" }
+        desc: `One of the many malls in MA we have visited. this was a post work dinner :) ` },
+    { id: 'card9', title: 'All Cozy In Bed', img: '../../images/2021/laying-in-bed.jpg',
+        desc: `I'm pretty sure this was that night we made that funny ass tiktok` },
+    { id: 'card10', title: 'Our First Valentine', img: '../../images/2021/salt-bae.jpg',
+        desc: `We took a trip up to Portsmouth and had a great looking in all the shops 
+        and having good eats` },
+    { id: 'card', title: 'Day at the Forts', img: '../../images/2021/long-feet.jpg',
+        desc: `I'm sorry I was in such a shitty mood this day. The sun was out
+            , we looked good, my baby was with me and happy. What more should I ask for?    
+            Well i guess I could ask for my FEET TO NOT BE SO DUMB LONG` }
+        
 ]
 

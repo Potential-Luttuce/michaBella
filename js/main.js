@@ -56,6 +56,9 @@ function createAllCards(dataMatrix) {
     }
 }
 
+
+
+
 // DATA FOR ALL CARDS via years
 const cardData2020 = [
     // 2020
@@ -100,7 +103,6 @@ const cardData2020 = [
 ];
 const cardData2021 = [
     //2021
-
     { id: 'card1', title: 'See..There WAS a Reef!', img: '../../images/2021/lighthouse-reef.jpg',
         desc: `This picture is so cute! And yo this did jip us. They always put a reef on` },
     { id: 'card2', title: 'When I\m Wit You', img: '../../images/2021/napping.jpg',
@@ -123,10 +125,22 @@ const cardData2021 = [
     { id: 'card10', title: 'Our First Valentine', img: '../../images/2021/salt-bae.jpg',
         desc: `We took a trip up to Portsmouth and had a great looking in all the shops 
         and having good eats` },
-    { id: 'card', title: 'Day at the Forts', img: '../../images/2021/long-feet.jpg',
+    { id: 'card11', title: 'Day at the Forts', img: '../../images/2021/long-feet.jpg',
         desc: `I'm sorry I was in such a shitty mood this day. The sun was out
             , we looked good, my baby was with me and happy. What more should I ask for?    
-            Well i guess I could ask for my FEET TO NOT BE SO DUMB LONG` }
-        
+            Well i guess I could ask for my FEET TO NOT BE SO DUMB LONG` },
+    { id: 'card12', title: 'Come on Man...', img: '../../images/2021/thats-fucked-up-man.jpg',
+        desc: `I don't this this need an explanation..` },
+    { id: 'card13', title: 'Hidden Gem', img: '../../images/2021/hidden-gem.jpg',
+        desc: `I don't remember taking this photo but we look so cute - one of my new 
+        faves from the past` },
+    { id: 'card14', title: 'One with nature!', img: '../../images/2021/hike1.jpg',
+        desc: `So young, so happy, so full of energy lmao!! but also this was such a fun day with you
+        and.....` }, 
+    { id: 'card15', title: 'Great Company', img: '../../images/2021/hill-top.jpg',
+        desc: `..Stanley & Anthony! This hike was mad fun especially with them - looking
+        forward to going back this spring / summer!` }, 
+    { id: 'card16', title: 'Hang in there baby', img: '../../images/2021/hanging-here.jpg',
+        desc: `He protec-but he also attack!` },
 ]
 

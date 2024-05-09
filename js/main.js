@@ -142,5 +142,21 @@ const cardData2021 = [
         forward to going back this spring / summer!` }, 
     { id: 'card16', title: 'Hang in there baby', img: '../../images/2021/hanging-here.jpg',
         desc: `He protec-but he also attack!` },
+    { id: 'card17', title: '"The green crab is my vavorite!"', img: '../../images/2021/aqua.jpg',
+        desc: `Maybe now that you're an ocean expert we should go back lol` },
+    { id: 'card18', title: 'Blossoms', img: '../../images/2021/white-flowers.jpg',
+        desc: `These flowers are so beautiful, when I walked to the bus on those early mornings 
+            in charlstown, I only could think about you <3` },
+    { id: 'card19', title: 'azir', img: '../../images/2021/azir.jpg',
+        desc: `Nothing specials.. just azir` },
+    { id: 'card20', title: 'WE OUTSIDE', img: '../../images/2021/we-outside.jpg',
+        desc: `Yes... the line was long but we had a time!!!`},
+    { id: 'card21', title: 'pretty in blue', img: '../../images/2021/beauty.jpg',
+        desc: `I mean wow... do I even need to say anything?` },
+    { id: 'card22', title: 'babys', img: '../../images/2021/126clifton.jpg',
+        desc: `Do you recognize them?  I dont lol,
+               It's crazy to think about us back then.. but I love you so so dearly and I know you love 
+                me aswell. I cherish you so much and I want you to know that I will never hurt, never wrong you, and always be here 
+                protecting you `  },
 ]
 

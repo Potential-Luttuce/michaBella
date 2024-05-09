@@ -158,5 +158,11 @@ const cardData2021 = [
                It's crazy to think about us back then.. but I love you so so dearly and I know you love 
                 me aswell. I cherish you so much and I want you to know that I will never hurt, never wrong you, and always be here 
                 protecting you `  },
+    { id: 'card22', title: 'Rock the boat', img: '../../images/2021/boatday.jpg',
+        desc: `Remeber how excited you were to be able to have a boat day with our friends up in Maine? This was such a good time!` },
+    { id: 'card23', title: 'Double Trouble', img: '../../images/2021/double-trouble.jpg',
+        desc: `This was.. an eventful day to say the least! my forever party buddy` },
+    { id: 'card21', title: 'Rachet HBD', img: '../../images/2021/ratchet-hbd.jpg',
+        desc: `I mean wow... do I even need to say anything?` },
 ]
 

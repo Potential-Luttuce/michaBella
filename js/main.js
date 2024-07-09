@@ -164,5 +164,13 @@ const cardData2021 = [
         desc: `This was.. an eventful day to say the least! my forever party buddy` },
     { id: 'card24', title: 'Rachet HBD', img: '../../images/2021/ratchet-hbd.jpg',
         desc: `I mean wow... do I even need to say anything?` },
-]
+];
+const cardData2022 = [
+    // 2022
+    //{ id: 'card1', title: '', img: '../../images/2022/.jpg',
+    //desc: `
+    //       `},
+        { id: 'card1', title: 'peaksparty', img: '../../images/2022/peaks.jpg',
+        desc: `Yaa maahnnn. Ya makin me craaaazzzyyy`},
+    ]
 

@@ -8,7 +8,7 @@
 
     <link rel="StyleSheet" href="../../css/style.css">
 </head>
-<body>
+<body onload="createAllCards(cardData2022)">
     <div id="main-sideBar">
         <div><p class="SB-intro">Here is some Text:</p>
             Click The Links to View Content.</div>
@@ -21,8 +21,21 @@
         </div>
     </div>
     <div id="main-pageContainer">
-        <div id="header">Nav-Bar</div>
-        <div id="pageContent"><h1>2022</h1></div>
+        <div id="navBar">
+            <div id="pageTitle"> The year was 2020, Covid was everywhere, 
+                but so was our love!
+            </div>
+        </div>
+        <div id="pageContent"></div>
+        <div id="footer">
+            <!-- <button onclick="robots()">clcik me to show robots</button>
+            <button onclick="customAlert()">custom Alert</button> -->
+            Footer
+        </div>
     </div>
 </body>
 </html>
+
+<Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src= '../../js/main.js'></script>

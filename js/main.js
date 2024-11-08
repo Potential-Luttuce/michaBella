@@ -37,6 +37,31 @@ function makeCard(textContent, cardId, clickHandler) {
     card.classList.add('Card');
     page.appendChild(card);
 }
+function makeNewCard(textContent, cardId, img, clickHandler) {
+    const page = document.querySelector('#pageContent') // all cards container
+    const card = document.createElement('div') // single card
+    const cardButton = document.createElement('a') // clickable card area (all)
+
+    const card_image_cont = document.createElement('div') // container for card image
+    const card_image = document.createElement('img') // image..
+    const card_image_text = document.createElement('div')
+    card_image_text.textContent = textContent
+    card.onclick = clickHandler
+    card.classList.add('card-txt')
+
+    card_image.src = img
+    card_image.classList.add('card-image')
+
+    card.appendChild(cardButton)
+    cardButton.appendChild(card_image_cont)
+    card_image_cont.appendChild(card_image)
+    card.appendChild(card_image_text)
+    card.id = cardId
+
+    page.appendChild(card)
+
+    
+}
 //USES CARDDATS DATA ARRAY TO MAKE MULTIPEL CARDS   
 function createAllCards(dataMatrix) {
     for (const { id, title, img, desc} of dataMatrix) {
@@ -52,7 +77,7 @@ function createAllCards(dataMatrix) {
                 popup: 'animate__animated animate__fadeOutUp'
             }
         });
-        makeCard(title, id, clickHandler);
+        makeNewCard(title, id, img ,clickHandler);
     }
 }
 

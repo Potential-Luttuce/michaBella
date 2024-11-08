@@ -103,6 +103,27 @@ html {
     background-color: indigo;
     cursor: zoom-in;
 }
+ /* New code for naturesite cards */
+.card-txt {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    color: aliceblue
+  }
+  #card,
+  .card-image {
+      height: 80px;
+      width: 80px;
+      border-radius: 15px 35px;
+      box-shadow: 0 0 24px 1px black;
+      /* border: 1px solid white */
+  }
+  .card-image:hover {
+      border-radius: 35px 15px;
+      box-shadow: 0 0 24px 1px #892CDC;
+  }
 
 /* FOOTER #######################################################################*/
 #footer {

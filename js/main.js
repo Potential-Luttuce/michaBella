@@ -27,16 +27,16 @@ console.log('Welcome to the year of Covid. MC')
 // JS FUNCTIONS TO DYNAMICLY CREATE CARDS/////////////////////////////////////
 
 //MAKES SINGLE CARD APPENDED TO PAGE
-function makeCard(textContent, cardId, clickHandler) {
-    const card = document.createElement('button');
-    const page = document.querySelector('#pageContent');
-    card.textContent = textContent;
-    card.id = cardId;
-    // Set onclick handler based on the provided function
-    card.onclick = clickHandler;
-    card.classList.add('Card');
-    page.appendChild(card);
-}
+// function makeCard(textContent, cardId, clickHandler) {
+//     const card = document.createElement('button');
+//     const page = document.querySelector('#pageContent');
+//     card.textContent = textContent;
+//     card.id = cardId;
+//     // Set onclick handler based on the provided function
+//     card.onclick = clickHandler;
+//     card.classList.add('Card');
+//     page.appendChild(card);
+// }
 function makeNewCard(textContent, cardId, img, clickHandler) {
     const page = document.querySelector('#pageContent') // all cards container
     const card = document.createElement('div') // single card

@@ -120,9 +120,15 @@ html {
       box-shadow: 0 0 24px 1px black;
       /* border: 1px solid white */
   }
+  .card-image {
+    /* opacity: .50; */
+    /* filter: invert(1); */
+    mask-image: radial-gradient(circle, transparent 50%, black 100%);
+  }
   .card-image:hover {
       border-radius: 35px 15px;
       box-shadow: 0 0 24px 1px #892CDC;
+      mask-image: none;
   }
 
 /* FOOTER #######################################################################*/

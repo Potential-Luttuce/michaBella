@@ -217,17 +217,20 @@ const cardData2022 = [
     desc: `This wedding was so fun but without you as my plus one I would not have 
         had anywhere as much fun! I love my forever plus one :)
           `},
-    { id: 'card7', title: '', img: '../../images/2022/.jpg',
-    desc: `
+    { id: 'card7', title: 'THE WOORLD CHAMPIONS', img: '../../images/2022/celtics.jpeg',
+    desc: `This was a super fun game, I can't wait to go again or share this moment with Carmelo
+            and his fam one day!
           `},
-    { id: 'card8', title: '', img: '../../images/2022/.jpg',
-    desc: `
+    { id: 'card8', title: 'She Cozy Cosy', img: '../../images/2022/comfy-cozy.jpeg',
+    desc: `Look at our old place! But also you look so cute and comfortable in this pic. Baby :)
           `},
-    { id: 'card9', title: '', img: '../../images/2022/.jpg',
-    desc: `
+    { id: 'card9', title: 'Day in the park', img: '../../images/2022/commons.jpeg',
+    desc: `Walking through the commons was a fun time and we did a little mini shoot.
+            I like winter but spring / summer in Boston with you (or anywhere) is best!)
           `},
-    { id: 'card10', title: '', img: '../../images/2022/.jpg',
-    desc: `
+    { id: 'card10', title: 'Oh Brother this guy STINKS', img: '../../images/2022/concert.jpeg',
+    desc: `She laughed, she cried..no wait.. she just cried. Unreal concert so glad I was able to
+            experience this with you!
           `},
     ]
 

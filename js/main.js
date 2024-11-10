@@ -172,7 +172,7 @@ const cardData2021 = [
     { id: 'card18', title: 'Blossoms', img: '../../images/2021/white-flowers.jpg',
         desc: `These flowers are so beautiful, when I walked to the bus on those early mornings 
             in charlstown, I only could think about you <3` },
-    { id: 'card19', title: 'azir', img: '../../images/2021/azir.jpg',
+    { id: 'card19', title: 'azir', img: '../../images/2021/azir1.jpg',
         desc: `Nothing specials.. just azir` },
     { id: 'card20', title: 'WE OUTSIDE', img: '../../images/2021/we-outside.jpg',
         desc: `Yes... the line was long but we had a time!!!`},
@@ -183,7 +183,7 @@ const cardData2021 = [
                It's crazy to think about us back then.. but I love you so so dearly and I know you love 
                 me aswell. I cherish you so much and I want you to know that I will never hurt, never wrong you, and always be here 
                 protecting you `  },
-    { id: 'card22', title: 'Rock the boat', img: '../../images/2021/boatday.jpg',
+    { id: 'card22', title: 'Rock the boat', img: '../../images/2021/boatday.jpeg',
         desc: `Remeber how excited you were to be able to have a boat day with our friends up in Maine? This was such a good time!` },
     { id: 'card23', title: 'Double Trouble', img: '../../images/2021/double-trouble.jpg',
         desc: `This was.. an eventful day to say the least! my forever party buddy` },
@@ -232,9 +232,68 @@ const cardData2022 = [
     desc: `She laughed, she cried..no wait.. she just cried. Unreal concert so glad I was able to
             experience this with you!
           `},
-    ]
+    { id: 'card11', title: 'Contessa Date Night', img: '../../images/2022/contessa.jpeg',
+        desc: `This was such a posh dinner date I really enjoyed it, and the free cake was lit
+            `},
+    { id: 'card12', title: 'Ben to my Jerry', img: '../../images/2022/gazibo.jpeg',
+        desc: `Dirt cup/cake was the flavor they let us try? This wasa good time we should go back to
+        burlington in general
 
+              `},
+    { id: 'card13', title: 'She always be looking over me', img: '../../images/2022/heaven.jpeg',
+    desc: `Don't be sad, I'm in heaben now
+            `},
+    { id: 'card14', title: 'drop it lik it\'s..', img: '../../images/2022/hotpot.jpeg',
+        desc: `HOT POT. That day a monster was born
+                `},
+    { id: 'card15', title: 'Memorial picnic day', img: '../../images/2022/memorial-picnic.jpeg',
+        desc: `This day was a lot of fun, playabowls, picnic, and just chillen in the grass w/ my baby
+                look how cute you are ;')
+                `},
+    { id: 'card16', title: 'I dont rap, I picture paint', img: '../../images/2022/muse.jpg',
+        desc: `lest we forget those ladys that got sauced on that sangria?? Also everyone that night
+                loved us 
+                `},
+    { id: 'card17', title: 'couple of nerds', img: '../../images/2022/museum.jpeg',
+    desc: `and NERD stands for damn I love my baby!!
+          `},
+    { id: 'card18', title: '"Look how cute mommy and daddy were"', img: '../../images/2022/parents-wedding.jpg',
+    desc: `WERE?? Nah but really this is what our kids will say one day
+            `},
+    { id: 'card19', title: 'Not once...', img: '../../images/2022/picnic.png',
+        desc: `But TWICE did we see a proposal lol, super fun picnic with great views from Boston Esplande
+                `},
+    { id: 'card20', title: 'Whole family out in the sun', img: '../../images/2022/plants.jpeg',
+        desc: `FR, RIP to all out plants from 126 Clifton, but look how happy they looked soakin up the rays
+                `},
+    { id: 'card21', title: 'Dont laugh', img: '../../images/2022/pullingmybaby.jpg',
+        desc: `This picture is top 2 and it aint 2 lmaoooo, but fr what a fun 4th of July this was at the Boles
+                 camp :)
+                `},
+    { id: 'card22', title: 'Let Pass Let PAss!!!!', img: '../../images/2022/racing.jpeg',
+        desc: `You hear that? It's the sound of Lewis Hamilton crying, or me smacking against the barrier
+                `},
+    { id: 'card23', title: 'SKANK', img: '../../images/2022/sk.jpg',
+        desc: `OK but all jokes aside this is a very cute pic :)
+                `},
+    { id: 'card24', title: 'Valentines pasta night', img: '../../images/2022/strega.jpg',
+        desc: `I'm blessed to have this beautiful view all the time, I love you so much by sweet baby
+                `},
+    { id: 'card25', title: 'Simple Simons', img: '../../images/2022/walk-selfie.jpeg',
+        desc: `Such a cusal picture and we arn't doing anything that exciting, just a walk around the neighborhood.
+            But I love moments like this with you <3
+                `},
+    { id: 'card26', title: 'Freeze! In the name of love', img: '../../images/2022/winter-walk.jpeg',
+    desc: `Break it don't shake it baby
+    `},
+    { id: 'card27', title: 'Shooters shoot', img: '../../images/2022/wisdom.jpeg',
+    desc: `Hands up and give me a kith
+            `},
 
-    // { id: 'card10', title: '', img: '../../images/2022/.jpg',
-    //     desc: `
-    //           `},
+]
+
+const fake = [
+    { id: 'card20', title: '', img: '../../images/2022/.jpg',
+        desc: `
+              `},
+]

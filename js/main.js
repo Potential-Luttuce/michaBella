@@ -195,34 +195,43 @@ const cardData2022 = [
     //{ id: 'card1', title: '', img: '../../images/2022/.jpg',
     //desc: `
     //       `},
-        { id: 'card1', title: 'peaksparty', img: '../../images/2022/peaks.jpg',
-        desc: `Yaa maahnnn. Ya makin me craaaazzzyyy`},
-        { id: 'card1', title: 'poo', img: '../../images/2022/.jpg',
+    { id: 'card1', title: 'peaksparty', img: '../../images/2022/peaks.jpg',
+    desc: `Yaa maahnnn. Ya makin me craaaazzzyyy`},
+    { id: 'card2', title: 'RachetHappyBirthday', img: '../../images/2022/bday.jpeg',
+    desc: `This bday party was so fun, the group at Mijas madeit a great time and 
+            of course we ended the night at HONG KONG lol
+          `},
+    { id: 'card3', title: 'Quick Detour', img: '../../images/2022/beach.jpg',
+    desc: `I dont remember exactly where but I think this was York. we stopped, 
+            at a snack and enjoyed the waves before our drive home
+          `},
+    { id: 'card4', title: 'Boat Party!', img: '../../images/2022/boat-night.png',
+    desc: `Good company, good pizza, good drinks, and casco bay. 
+        What more could we ask for?
+          `},
+    { id: 'card5', title: 'Felipe mi crazzy', img: '../../images/2022/burrito.png',
+    desc: `Where were we coming from ? Anyways those margs had no business being THAT
+            strong..
+          `},
+    { id: 'card6', title: 'Plus One', img: '../../images/2022/carter-wedding.jpg',
+    desc: `This wedding was so fun but without you as my plus one I would not have 
+        had anywhere as much fun! I love my forever plus one :)
+          `},
+    { id: 'card7', title: '', img: '../../images/2022/.jpg',
     desc: `
           `},
-    { id: 'card1', title: '', img: '../../images/2022/.jpg',
+    { id: 'card8', title: '', img: '../../images/2022/.jpg',
     desc: `
           `},
-    { id: 'card1', title: '', img: '../../images/2022/.jpg',
+    { id: 'card9', title: '', img: '../../images/2022/.jpg',
     desc: `
           `},
-    { id: 'card1', title: '', img: '../../images/2022/.jpg',
-    desc: `
-          `},
-    { id: 'card1', title: '', img: '../../images/2022/.jpg',
-    desc: `
-          `},
-    { id: 'card1', title: '', img: '../../images/2022/.jpg',
-    desc: `
-          `},
-    { id: 'card1', title: '', img: '../../images/2022/.jpg',
-    desc: `
-          `},
-    { id: 'card1', title: '', img: '../../images/2022/.jpg',
-    desc: `
-          `},
-    { id: 'card1', title: '', img: '../../images/2022/.jpg',
+    { id: 'card10', title: '', img: '../../images/2022/.jpg',
     desc: `
           `},
     ]
 
+
+    // { id: 'card10', title: '', img: '../../images/2022/.jpg',
+    //     desc: `
+    //           `},

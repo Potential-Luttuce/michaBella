@@ -87,6 +87,7 @@ html {
     flex-wrap: wrap;
     border: 1px solid red;
     padding: 5px;
+    gap: 1px;
 }
 
 /* CARDS #######################################################################*/
@@ -113,6 +114,9 @@ html {
     color: rgb(4, 13, 21);
     text-align: center;
   }
+.card-txt:hover {
+    border: 1px solid black;
+}
   #card,
   .card-image {
       height: 80px;

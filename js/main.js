@@ -68,6 +68,7 @@ function createAllCards(dataMatrix) {
         // Pass unique text content, ID, and onclick handler for each card
         const clickHandler = () => //
         Swal.fire({
+            title: title,
             imageUrl: img,
             text: desc,
             showClass: {
@@ -334,14 +335,166 @@ const cardData2023 = [
     { id: 'card14', title: 'Kissimmee', img: '../../images/2023/kissimmee.jpeg',
         desc: `Nothing to say, just a nice pic
     `},
-    { id: 'card20', title: 'Oh she waaaaavy', img: '../../images/2023/miami-nails.jpeg',
+    { id: 'card15', title: 'Oh she waaaaavy', img: '../../images/2023/miami-nails.jpeg',
         desc: `Your nails looked so good for this trip! This was a good time but damn were we siiiiick
     `},
-    
+    { id: 'card16', title: 'shes beauty and shes grace..', img: '../../images/2023/moana.jpeg',
+        desc: `Oh sike thats just moana, I love feeling like a little kid woth you, aka the waterfall thing
+    `},
+    { id: 'card17', title: 'L for double LOOOOOSSSERRRR', img: '../../images/2023/put-shack.jpeg',
+        desc: `I call rematch because thats wild you hurt my (and pats) pride that night
+    `},
+    { id: 'card18', title: 'Calm before the strom', img: '../../images/2023/ski-trip.jpeg',
+        desc: `Our first ski day together and I was so proud to show off my tufts beanie for my baby.
+                RIP that jacket ew
+    `},
+    { id: 'card19', title: 'smol', img: '../../images/2023/small-gloves.jpeg',
+        desc: `where did her fingers goo omg.. must have been some shrinking potion in that Maine Blueberry amiright
+    `},
+    { id: 'card20', title: 'bald head', img: '../../images/2023/small-max.jpeg',
+        desc: `This picture is just so goofy I know  i hope it makes you laugh
+    `},
+    { id: 'card21', title: 'BITCH IM A MOTHA', img: '../../images/2023/st-patrick.jpeg',
+        desc: `nO DRAMA BUT ONLY SOMETIMES WHEN I DRINK VODKA
+    `},
+    { id: 'card22', title: 'dont laugh', img: '../../images/2023/sunny-dave.jpeg',
+        desc: `'I'll call it...SUNNY DAY' But fr those hit so hard idk what you put in them
+    `},
+    { id: 'card23', title: 'Tiki Rock', img: '../../images/2023/tiki.jpeg',
+        desc: `All and all aside, this was a fun time bc we got hot pot before lol, tiki rock was a fun time and 
+        when you did the cotten eyed joe or something
+    `},
+    { id: 'card24', title: 'Time out dates', img: '../../images/2023/time-out-market.jpeg',
+        desc: `I love our dates at timeout market its always a time lmao
+    `}
+              
 ];
+const cardData2024 = [
+{ id: 'card1', title: 'July Picnic', img: '../../images/2024/bday-picnic.jpeg',
+desc: `This was a really fun day, trying on rings, walking arounf back back and celebrating your birthday
+    in the commons!
+`},
+{ id: 'card2', title: 'Which yo lookin ass', img: '../../images/2024/beach-day.jpeg',
+desc: `Besides the water being buns cold it felt like tropic water bc it ws so clear!!
+`},
+{ id: 'card3', title: 'its about to be one of those nights', img: '../../images/2024/bed-mike.jpeg',
+desc: `Idk what the context for this picture is but I thought it captured us pretty well lol
+`},
+{ id: 'card4', title: 'Me + U = <3', img: '../../images/2024/bella-mike.jpeg',
+desc: `From our day at Kimball famrs, I think this was shortly before you aced a massive hole in one
+`},
+{ id: 'card5', title: 'City Bike', img: '../../images/2024/biking.png',
+desc: `Fun little bike rides around the city with you are the best, but its time for some winter sports!!
+`},
+{ id: 'card6', title: 'Good thing you had those little shorts on!', img: '../../images/2024/boat-day.jpg',
+desc: `Our day in portsmouth was a lot of fun, adventures with you make me so happy baby :)
+`},
+{ id: 'card7', title: 'bumpbubumpbump', img: '../../images/2024/bumpercar.png',
+desc: `Who were the bigger kids? actually, dont answer that
+`},
+{ id: 'card8', title: 'Alllll aboard!!!', img: '../../images/2024/conway-train.jpeg',
+desc: `This was such a beautiful experience, but damn that person really did BLOW up that bathroom lol
+`},
+{ id: 'card9', title: 'Suprise!', img: '../../images/2024/corgi.jpeg',
+desc: `Just a cute corgi for you :)
+`},
+{ id: 'card10', title: 'My MIIIIIND', img: '../../images/2024/eclipse.jpeg',
+desc: `And she was DETERMINED to see the moon block the sun
+`},
+{ id: 'card12', title: 'Ya little nasty', img: '../../images/2024/feet-skin.jpeg',
+desc: `If I rember correctly you were doing this during dinner or instead of studying, wakala
+`},
+{ id: 'card13', title: 'The Biggest E', img: '../../images/2024/ferris-wheel.jpeg',
+desc: `All the kings horses and all the kings men could not make those lines move faster
+`},
+{ id: 'card14', title: 'The big bang', img: '../../images/2024/fireworks.jpeg',
+desc: `All things aside I had a really gun time at this wedding with you, we really busted a move as always ;)
+`},
+{ id: 'card15', title: 'Gazibo round 2?', img: '../../images/2024/gazibo.jpg',
+desc: `I really love this picture, the backgroud, the gazibo, and you look so beautiful,
+     your skin glowing and your hair flawless. u 8 girl
+`},
+{ id: 'card16', title: 'The universe speaks so loudly', img: '../../images/2024/fire-fly.jpeg',
+desc: `I love you as if we were two fire flies doing a mating dance by the water. I love you so deeply that even in 
+    the hard times something in me melts and I want nothing but to be with my baby
+`},
+{ id: 'card17', title: 'Fire bad, fire bad!', img: '../../images/2024/habatchi.jpeg',
+    desc: `This hibatchi date in sopo was a lot of fun, we even got to help celebrate that dudes bday lol, the
+        scorpian bowl went real hard too btw
+`},
+{ id: 'card18', title: 'lil man', img: '../../images/2024/jt-boat.jpeg',
+    desc: `once again thank you for always loving my friends and family as if they were your own.
+        after all, thats your god baby!
+`},
+{ id: 'card19', title: 'lil man round 2', img: '../../images/2024/jt.jpeg',
+    desc: `This was after the church potluck whoch I am so gratefull for your help, you really pulled through and held
+        your own out there. I may have given people to much money back but its all good, this was also just after
+            another fun porthole sesh!
+`},
+{ id: 'card20', title: 'Ride em!', img: '../../images/2024/cow-girl.jpeg',
+    desc: `idk how to spell it but that sound you hate that I make that goes 'aehhhhhhh', I probably just did it if im behing honest
+`},{ id: 'card21', title: 'wiggle wiggle wiggle!', img: '../../images/2024/max.jpeg',
+    desc: `He was so happy to make waffles with me lol
+`},
+{ id: 'card21', title: 'Its right behind me isnt it?', img: '../../images/2024/museum.jpeg',
+    desc: `Leaning new things and looking at cool rocks with you. This was such a fun little date day in harvard square
+`},
+{ id: 'card22', title: 'laddy and the SKANK!', img: '../../images/2024/OLIVE-GARDEN.jpeg',
+    desc: `Wathcing jayls graduation was fun..but putting down the drinks and food at olive garden was wild
+`},
+{ id: 'card23', title: 'FORTY YEARSSS', img: '../../images/2024/opera-house.jpeg',
+    desc: `Title doesnt go woth the picture but this was so much fun I'm really excited for the nut cracker with you
+`},
+{ id: 'card24', title: 'Now thats more like it!!', img: '../../images/2024/.jpg',
+    desc: `Nothing to say here, she probably deserved it, flappin those gums all day long
+`},
+{ id: 'card25', title: 'Okay lets start with the corners..', img: '../../images/2024/puzzle.jpg',
+    desc: `Shes beauty and shes grace...shes miss united states!
+`},
+{ id: 'card26', title: 'Retro 1', img: '../../images/2024/retro-1.jpeg',
+    desc: `IK this one doesnt belong here but this is a fun picture we took at scorpian, feels like 5ever ago
+`},
+{ id: 'card27', title: 'Retro 2', img: '../../images/2024/retro-2.jpeg',
+    desc: `Another one that doesnt belong in the year but I LOVE THIS PHOTO SO SO SO MUCH
+`},
+{ id: 'card28', title: 'Look at me I am under de water', img: '../../images/2024/rooftop.jpeg',
+    desc: `Sike we on top of the world! seriously though how long was that staircase? felt like redline in porter!!
+`},
+{ id: 'card29', title: 'Not once...', img: '../../images/2024/sick-baby-1.jpeg',
+    desc: `
+`},
+{ id: 'card30', title: 'Not twice...', img: '../../images/2024/sick-baby-2.jpeg',
+    desc: `
+`},
+{ id: 'card31', title: 'but three times...', img: '../../images/2024/sick-baby-3.jpeg',
+    desc: `My baby was down bad this year but best belive ima stick beside her
+`},
+{ id: 'card32', title: 'sean white??', img: '../../images/2024/ski-dunks.jpeg',
+    desc: `Short pulled up with the hardest board on the mountain and shreded after her pep talk cry
+`},
+{ id: 'card33', title: 'skys the limit', img: '../../images/2024/ski-selfi.jpeg',
+    desc: `So we starting with double black diamonds at watchusett right??
+`},
+{ id: 'card34', title: 'No but for real..', img: '../../images/2024/sleepy-pat.jpeg',
+    desc: `you didnt have to do him like that ut this is sstill so funny lmao
+`},
+{ id: 'card35', title: '1 star baby sitters', img: '../../images/2024/slide.jpeg',
+    desc: `That time we yeeted a baby down the slide..
+`},
+{ id: 'card36', title: 'Tea please!', img: '../../images/2024/tea.jpeg',
+    desc: `This was such a fun cute date, I had a great time and loved how much you enjoyed the little finger foods (me too)
+`},
+{ id: 'card37', title: 'I mustache you a question..', img: '../../images/2024/wedding-2.jpeg',
+    desc: `you love me? cus I love you! this wedding was so fun and yet AGAIN we threw it down on the dance floor good lord
+`},
+{ id: 'card29', title: '', img: '../../images/2024/wilson.jpeg',
+    desc: `Our favorite little farm, you are my favorite pumpkin :)
+`},
 
-const fake = [
-    { id: 'card20', title: '', img: '../../images/2023/.jpg',
-        desc: `
-              `},
 ]
+
+// const fake = [
+//     { id: 'card20', title: '', img: '../../images/2024/.jpg',
+//         desc: `
+//               `},
+// ]

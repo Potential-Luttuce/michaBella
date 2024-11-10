@@ -61,6 +61,9 @@ html {
     width: 90%;
     height: 100%;
 }
+#audio-container {
+    text-align: center;
+}
 
 /* NAV BAR #######################################################################*/
 #navBar {

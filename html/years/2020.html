@@ -23,6 +23,14 @@
             <a class="yearBtn shadow-btn" href="2023.html">2023</a>
             <a class="yearBtn shadow-btn" href="2024.html">2024</a>
         </div>
+        <div id="audio-container">
+            <h1 id="audio-desc">
+                Blxst - Wrong Or Right
+            </h1>
+            <audio id="audio-player" controls autoplay>
+                <source src="../../audio/Blxst - Wrong Or Right ft. Bino Rideaux (Audio).mp3" type="audio/mpeg">
+              </audio>
+        </div>
     </div>
     <div id="main-pageContainer">
         <div id="navBar">
@@ -39,7 +47,13 @@
     </div>
 </body>
 </html>
-
+<script>
+    // After the page loads, unmute the audio
+    window.onload = function() {
+      var audioPlayer = document.getElementById('audio-player');
+      audioPlayer.muted = false; // Unmute after the page loads
+    };
+  </script>
 <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src= '../../js/main.js'></script>

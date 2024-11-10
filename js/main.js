@@ -243,9 +243,6 @@ const cardData2022 = [
     { id: 'card13', title: 'She always be looking over me', img: '../../images/2022/heaven.jpeg',
     desc: `Don't be sad, I'm in heaben now
             `},
-    { id: 'card14', title: 'drop it lik it\'s..', img: '../../images/2022/hotpot.jpeg',
-        desc: `HOT POT. That day a monster was born
-                `},
     { id: 'card15', title: 'Memorial picnic day', img: '../../images/2022/memorial-picnic.jpeg',
         desc: `This day was a lot of fun, playabowls, picnic, and just chillen in the grass w/ my baby
                 look how cute you are ;')
@@ -289,11 +286,62 @@ const cardData2022 = [
     { id: 'card27', title: 'Shooters shoot', img: '../../images/2022/wisdom.jpeg',
     desc: `Hands up and give me a kith
             `},
-
-]
+];
+const cardData2023 = [
+    { id: 'card1', title: 'THE BABY HAIRS', img: '../../images/2023/baby-hair.jpeg',
+        desc: `That one time you had the most perfect baby hair crl while poopin
+              `},
+    { id: 'card2', title: 'smol girl big chair', img: '../../images/2023/big-seat.jpeg',
+    desc: `We only took this pic because the chair is MASSIVE and you wanted to see lol
+    `},
+    { id: 'card3', title: 'Crunch Time', img: '../../images/2023/biology.jpeg',
+        desc: `Home girl looks so down bad, I think this was one of your last exams / quizes that semester
+    `},
+    { id: 'card4', title: 'R&B Concert', img: '../../images/2023/brent.jpeg',
+        desc: `This concert was a lot of fun especially because we had great seats, 
+        I love experiences like this with you
+    `},
+    { id: 'card5', title: 'She came, she saw, she..well lets leave it at that..', img: '../../images/2023/burton.jpeg',
+        desc: `I'm jokin I'm jokin, you did so well on your first time and have come leaps and bounds farther since then
+        Always so proud of you.But for real you hit rock bottom at the top of this rock, only 
+            holding this snow chink helpped ease the pain lmao
+    `},
+    { id: 'card6', title: 'ON , not IN', img: '../../images/2023/cape-dinner.jpeg',
+        desc: `This little cape escape was so fun, I can't wait to do it again!
+    `},
+    { id: 'card7', title: '\HOW LONG IS THIS LINE??\'', img: '../../images/2023/epcot-ball.jpeg',
+        desc: `Mission to space almosr turned into mission to the toilet if you know what I mean, disney was
+        so fun I really want to see all the parks in the world with you
+    `},
+    { id: 'card8', title: 'dont...move...a...muscle', img: '../../images/2023/foxwoods.jpeg',
+        desc: `I cant explain this picture but its so us lmao. Also Kenny G was wild
+    `},
+    { id: 'card9', title: 'Once I make MY move...', img: '../../images/2023/harry-bella.jpeg',
+        desc: `That's right.. Black could be anywhere
+    `},
+    { id: 'card10', title: 'lil baby holding a lil baby', img: '../../images/2023/holding-max.jpeg',
+        desc: `Look how little he was aww, I love how gentle yu are with kids and babys I love it
+    `},
+    { id: 'card11', title: 'drop it lik it\'s..', img: '../../images/2022/hotpot.jpeg',
+        desc: `HOT POT. That day a monster was born
+                `},
+    { id: 'card12', title: 'Id go back just for the meatballs ngl', img: '../../images/2023/ikea.jpeg',
+        desc: `You have the same look on your face as I do on hour 3 shopping with you lmao
+    `},
+    { id: 'card13', title: 'City Views', img: '../../images/2023/jordan.jpeg',
+        desc: `DAMN would it kill him to smile? Jk but Jordan visiting was so fun
+    `},
+    { id: 'card14', title: 'Kissimmee', img: '../../images/2023/kissimmee.jpeg',
+        desc: `Nothing to say, just a nice pic
+    `},
+    { id: 'card20', title: 'Oh she waaaaavy', img: '../../images/2023/miami-nails.jpeg',
+        desc: `Your nails looked so good for this trip! This was a good time but damn were we siiiiick
+    `},
+    
+];
 
 const fake = [
-    { id: 'card20', title: '', img: '../../images/2022/.jpg',
+    { id: 'card20', title: '', img: '../../images/2023/.jpg',
         desc: `
               `},
 ]

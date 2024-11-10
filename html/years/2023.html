@@ -8,7 +8,7 @@
 
     <link rel="StyleSheet" href="../../css/style.css">
 </head>
-<body>
+<body onload="createAllCards(cardData2023)">
     <div id="main-sideBar">
         <div><p class="SB-intro">Here is some Text:</p>
             Click The Links to View Content.</div>
@@ -22,7 +22,11 @@
     </div>
     <div id="main-pageContainer">
         <div id="header">Nav-Bar</div>
-        <div id="pageContent"><h1>2023</h1></div>
+        <div id="pageContent"></div>
     </div>
 </body>
 </html>
+
+<Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src= '../../js/main.js'></script>

@@ -18,6 +18,7 @@ html {
     display: flex;
     flex-direction: column;
     padding: 8px;
+    height: 2000px;
 }
 #indexBtn {
     font-size: 10px;
@@ -138,7 +139,45 @@ html {
       box-shadow: 0 0 24px 1px #892CDC;
       mask-image: none;
   }
-
+/* TV ####################################################################### */
+#tv-container {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.antena {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.tv-box {
+    border: 1px solid green;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    
+}
+.tv-screen {
+    border: 2pc solid black;
+    width: 75%;
+    height: 65%;
+    background-color: rgb(23, 23, 23);
+}
+.tv-btn-container {
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tv-btns {
+    background-color: rgb(120, 116, 109);
+    color:black;
+    font-weight: 900;
+}
 /* FOOTER #######################################################################*/
 #footer {
     display:inline-block;

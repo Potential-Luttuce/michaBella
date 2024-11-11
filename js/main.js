@@ -445,8 +445,9 @@ desc: `I love you as if we were two fire flies doing a mating dance by the water
 { id: 'card23', title: 'FORTY YEARSSS', img: '../../images/2024/opera-house.jpeg',
     desc: `Title doesnt go woth the picture but this was so much fun I'm really excited for the nut cracker with you
 `},
-{ id: 'card24', title: 'Now thats more like it!!', img: '../../images/2024/.jpg',
-    desc: `Nothing to say here, she probably deserved it, flappin those gums all day long
+{ id: 'card24', title: 'Right to jail..right away!', img: '../../images/2024/prisoner.jpeg',
+    desc: `Now thats more like it!!
+        Nothing to say here, she probably deserved it, flappin those gums all day long
 `},
 { id: 'card25', title: 'Okay lets start with the corners..', img: '../../images/2024/puzzle.jpg',
     desc: `Shes beauty and shes grace...shes miss united states!
@@ -493,6 +494,51 @@ desc: `I love you as if we were two fire flies doing a mating dance by the water
 
 ]
 
+function makeTV() {
+    const tv_container = document.getElementById('tv-container');
+    const antena = document.createElement('div')
+    const tv_box = document.createElement('div')
+    const tv_screen = document.createElement('div')
+    const tv_btn_container = document.createElement('div')
+    const tv_btn_pwr = document.createElement('button') //on-off
+    const tv_btn_info = document.createElement('button')
+    const tv_btn_action = document.createElement('button') //play-pause
+    // const tv_btn_pwr = document.createElement('button')
+    
+    antena.classList.add('antena');
+    tv_box.classList.add('tv-box');
+    tv_screen.classList.add('tv-screen');
+    tv_btn_container.classList.add('tv-btn-container');
+    tv_btn_pwr.classList.add('tv-btns');
+    tv_btn_info.classList.add('tv-btns');
+    tv_btn_action.classList.add('tv-btns');
+
+    tv_container.appendChild(antena);
+    tv_container.appendChild(tv_box);
+    tv_box.appendChild(screen);
+    tv_box.appendChild(tv_btn_container)
+    tv_btn_container.appendChild(tv_btn_info)
+    tv_btn_container.appendChild(tv_btn_action)
+    tv_btn_container.appendChild(tv_btn_pwr)
+
+}
+
+function loadAllContent(year) {
+    //Load years for card data
+    if (year == 2020) {
+        createAllCards(cardData2020)
+    } else if (year == 2021) {
+        createAllCards(cardData2021)
+    } else if (year == 2022) {
+        createAllCards(cardData2022)
+    } else if (year == 2023) {
+        createAllCards(cardData2023)
+    } else {
+        createAllCards(cardData2024)
+    }
+
+    //load year for media data
+}
 // const fake = [
 //     { id: 'card20', title: '', img: '../../images/2024/.jpg',
 //         desc: `

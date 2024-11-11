@@ -496,7 +496,7 @@ desc: `I love you as if we were two fire flies doing a mating dance by the water
 
 function makeTV() {
     const tv_container = document.getElementById('tv-container');
-    const antena = document.createElement('div')
+    // const antena = document.createElement('img')
     const tv_box = document.createElement('div')
     const tv_screen = document.createElement('div')
     const tv_btn_container = document.createElement('div')
@@ -505,23 +505,33 @@ function makeTV() {
     const tv_btn_action = document.createElement('button') //play-pause
     // const tv_btn_pwr = document.createElement('button')
     
-    antena.classList.add('antena');
+    // antena.classList.add('antena');
     tv_box.classList.add('tv-box');
     tv_screen.classList.add('tv-screen');
     tv_btn_container.classList.add('tv-btn-container');
     tv_btn_pwr.classList.add('tv-btns');
+    tv_btn_pwr.id = 'tv_pwr'
     tv_btn_info.classList.add('tv-btns');
+    tv_btn_info.id = 'tv_info'
     tv_btn_action.classList.add('tv-btns');
+    tv_btn_action.id = 'tv_action'
 
-    tv_container.appendChild(antena);
+    // tv_container.appendChild(antena);
     tv_container.appendChild(tv_box);
-    tv_box.appendChild(screen);
+    tv_box.appendChild(tv_screen);
     tv_box.appendChild(tv_btn_container)
     tv_btn_container.appendChild(tv_btn_info)
     tv_btn_container.appendChild(tv_btn_action)
     tv_btn_container.appendChild(tv_btn_pwr)
+    tv_btn_pwr.textContent = 'On'
+    tv_btn_info.textContent = 'Info'
+    tv_btn_action.textContent = 'Play'
+
+    //button actions changes
+
 
 }
+
 
 function loadAllContent(year) {
     //Load years for card data
@@ -536,8 +546,8 @@ function loadAllContent(year) {
     } else {
         createAllCards(cardData2024)
     }
-
     //load year for media data
+    makeTV()
 }
 // const fake = [
 //     { id: 'card20', title: '', img: '../../images/2024/.jpg',

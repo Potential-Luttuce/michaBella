@@ -2,11 +2,12 @@
 * {
     /* border: 1px solid  white; */
 }
+
 body,
 html {
     display: flex;
-    height: 100%;
-    width: 100%;
+    /* height: 100%; */
+    /* width: 100%; */
     margin: 0;
     background: #D7C5DF;
     color: white;
@@ -18,7 +19,15 @@ html {
     display: flex;
     flex-direction: column;
     padding: 8px;
-    height: 2000px;
+    height: 100%;
+}
+#home-sideBar {
+    background-color: #61398F;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    height: 100vh;
 }
 #indexBtn {
     font-size: 10px;
@@ -64,6 +73,7 @@ html {
 }
 #audio-container {
     text-align: center;
+    margin-top: 10pc;
 }
 
 /* NAV BAR #######################################################################*/
@@ -89,9 +99,14 @@ html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border: 1px solid red;
     padding: 5px;
     gap: 1px;
+}
+#custom-line {
+    height: 2px;
+    width: 100%;
+    background-color: #2c1541;
+
 }
 
 /* CARDS #######################################################################*/
@@ -141,37 +156,43 @@ html {
   }
 /* TV ####################################################################### */
 #tv-container {
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 100%;
+    height:fit-content;
 }
 .antena {
-    border: 1px solid black;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .tv-box {
-    border: 1px solid green;
+    border: 3px solid rgb(138, 111, 76);
     background-color: burlywood;
     display: flex;
     flex-direction: column;
-    gap: 2.5em;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    padding: 1em;
+    border-radius: 20px;
     
 }
 .tv-screen {
     border: 2pc solid black;
-    width: 75%;
-    height: 65%;
+    width: 700px;
+    height: 500px;
     background-color: rgb(23, 23, 23);
+    border-radius: 1pc;
 }
 .tv-btn-container {
-    border: 1px solid yellow;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 75%;
+    margin-top: 1.5em;
 }
 .tv-btns {
     background-color: rgb(120, 116, 109);

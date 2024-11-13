@@ -490,46 +490,47 @@ desc: `I love you as if we were two fire flies doing a mating dance by the water
 ]
 //////////////////////// MAKE TV & BUTTONS
 function tvBtnAction() {
-    // const pwr_btn = document.getElementById('tv-pwr')
-    // const info_btn  =document.getElementById('tv_info')
-    // const play_btn = document.getElementById('tv_action')
-    //pwr
     if (this.id == 'tv_pwr') {
-        console.log(this.id)
         if (this.textContent == 'On') {
             this.textContent = 'Off'
+            this.style.backgroundColor = 'Red'
+            //off code here
           } else {
             this.textContent = 'On'
+            this.style.backgroundColor = 'Green'
+            //on code here
           }
     } else if (this.id == 'tv_action') {
-        console.log(this.id)
-
-        if (this.textContent == 'Play') {
-            this.textContent = 'Pause'
+        if (this.textContent == 'Play >') {
+            this.textContent = 'Pause ||'
             //Start video code goes here
           } else {
-            this.textContent = 'Play'
+            this.textContent = 'Play >'
             //play video code goes here
           }
     } else if (this.id == 'tv_info') {
-        console.log(this.id)
-
         window.alert('Info requested..')
+    } else if (this.id == 'tv_vid_src') {
+        if (this.textContent == 'Mike Video') {
+            this.textContent = 'Bella Video'
+            //off code here
+          } else {
+            this.textContent = 'Mike Video'
+            //on code here
+          }
     }
   }
 
 function makeTV() {
     const tv_container = document.getElementById('tv-container');
-    // const antena = document.createElement('img')
     const tv_box = document.createElement('div')
     const tv_screen = document.createElement('div')
     const tv_btn_container = document.createElement('div')
     const tv_btn_pwr = document.createElement('button') //on-off
     const tv_btn_info = document.createElement('button')
     const tv_btn_action = document.createElement('button') //play-pause
-    // const tv_btn_pwr = document.createElement('button')
+    const tv_btn_video_src = document.createElement('button')// displays / sets video src
     
-    // antena.classList.add('antena');
     tv_box.classList.add('tv-box');
     tv_screen.classList.add('tv-screen');
     tv_btn_container.classList.add('tv-btn-container');
@@ -539,22 +540,31 @@ function makeTV() {
     tv_btn_info.id = 'tv_info'
     tv_btn_action.classList.add('tv-btns');
     tv_btn_action.id = 'tv_action'
+    tv_btn_video_src.classList.add('tv-btns');
+    tv_btn_video_src.id = 'tv_vid_src'
 
-    // tv_container.appendChild(antena);
+    tv_btn_pwr.textContent = 'Off'
+    tv_btn_pwr.style.backgroundColor = 'Red'
+    tv_btn_info.textContent = 'Info ?'
+    tv_btn_action.textContent = 'Play >'
+    tv_btn_video_src.textContent = 'Mike Video'
+
     tv_container.appendChild(tv_box);
     tv_box.appendChild(tv_screen);
     tv_box.appendChild(tv_btn_container)
     tv_btn_container.appendChild(tv_btn_info)
     tv_btn_container.appendChild(tv_btn_action)
+    tv_btn_container.appendChild(tv_btn_video_src)
     tv_btn_container.appendChild(tv_btn_pwr)
-    tv_btn_pwr.textContent = 'On'
-    tv_btn_info.textContent = 'Info'
-    tv_btn_action.textContent = 'Play'
+    
+
+    
 
     //button actions changes
     tv_btn_pwr.onclick = tvBtnAction
     tv_btn_action.onclick = tvBtnAction
     tv_btn_info.onclick = tvBtnAction
+    tv_btn_video_src.onclick = tvBtnAction
 
 }
 

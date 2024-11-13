@@ -14,97 +14,25 @@
     }
     body {
       display: flex;
-      justify-content: flex-end;
     }
-    /* show me how to do a simple web scrape with js / python
-     to grab and download an image from this site -
-      https://pixabay.com/images/search/duck/ - and save into  into ''../some/directory" */
+    
   </style>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
-    // SweetAlerts() //////////////////////////////////////////////////////////
-    // Show Robot
-    function robot() {
-      Swal.fire({
-        imageUrl: 'images/robot.jpg',
-      });
-      console.log('Robot Popup viewed')
-    }
-    // Custom alert
-    function customAlert() {
-      Swal.fire({
-        icon: 'info',
-        iconColor: 'blue',
-        title: 'Hi! I\'m a custom Alert',
-        text: 'I\'m some description text',
-        confirmButtonText: 'Move Along',
-      })
-      console.log('Custom Alert Viewed ')
-    }
-    // iconHTMl
-    function custom1() {
-      Swal.fire({
-        title: "Custom Icon",
-        html: '<i class="fa fa-heart" style="color: red;"></i>',
-        showCancelButton: true,
-        confirmButtonText: "OK",
-        cancelButtonText: "Cancel"
-      });
-      console.log('custom 1 was viewed')
-    }
-    // Javascript//////////////////////////////////////////////////////////
-    function makeCard(){
-      const card = document.createElement('button');
-      const page = document.querySelector('#pageContent');
-      card.textContent = "Hello, world!";
-      card.classList.add('Card'); 
-      page.appendChild(card);
-    }
-    function createAllCards() {
-      for (let i = 0; i < 5; i++) {
-        makeCard()
+   
+    function changeText() {
+      const pwr_btn = document.getElementById('power-btn')
+      if (pwr_btn.textContent == 'On') {
+        pwr_btn.textContent = 'Off'
+      } else {
+        pwr_btn.textContent = 'On'
       }
     }
+
   </script>
 </head>
 <body>
-  <button onclick="customAlert()">Show Custom Alert</button>
-  <button onclick="robot()">show robot</button>
-  <button onclick="custom1()">Custom1</button>
-
-
-<div class="card-txt">
-    <a id="cardImage-bttn"href="html/turtlePage.html">
-      <div id="card">
-          <img src="images/turtles/onlog/turtOnLog.JPG" alt="Robot" class="card-image">
-      </div>
-    </a>
-    <br>
-    Turtles
-</div>
-
-.card-txt {
-  width: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1em;
-  color: aliceblue
-}
-#card,
-.card-image {
-    height: 80px;
-    width: 80px;
-    border-radius: 15px 35px;
-    box-shadow: 0 0 24px 1px black;
-    /* border: 1px solid white */
-}
-.card-image:hover {
-    border-radius: 35px 15px;
-    box-shadow: 0 0 24px 1px #892CDC;
-}
-
-
+  <button id="power-btn" onclick="changeText()">On</button>
 </body>
 </html>
 

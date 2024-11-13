@@ -13,6 +13,7 @@ html {
     color: white;
 }
 /* SideBar ####################################################################### */
+
 #main-sideBar {
     background-color: #61398F;
     color: aliceblue;
@@ -204,4 +205,6 @@ html {
     display:inline-block;
     flex-direction: column;
 }
+
+
 

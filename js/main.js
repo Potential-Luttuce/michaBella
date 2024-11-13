@@ -59,10 +59,8 @@ function makeNewCard(textContent, cardId, img, clickHandler) {
     card.id = cardId
 
     page.appendChild(card)
-
-    
 }
-//USES CARDDATS DATA ARRAY TO MAKE MULTIPEL CARDS   
+//////////////////////USES CARDDATS DATA ARRAY TO MAKE MULTIPEL CARDS   
 function createAllCards(dataMatrix) {
     for (const { id, title, img, desc} of dataMatrix) {
         // Pass unique text content, ID, and onclick handler for each card
@@ -81,9 +79,6 @@ function createAllCards(dataMatrix) {
         makeNewCard(title, id, img ,clickHandler);
     }
 }
-
-
-
 
 // DATA FOR ALL CARDS via years
 const cardData2020 = [
@@ -493,6 +488,35 @@ desc: `I love you as if we were two fire flies doing a mating dance by the water
 `},
 
 ]
+//////////////////////// MAKE TV & BUTTONS
+function tvBtnAction() {
+    // const pwr_btn = document.getElementById('tv-pwr')
+    // const info_btn  =document.getElementById('tv_info')
+    // const play_btn = document.getElementById('tv_action')
+    //pwr
+    if (this.id == 'tv_pwr') {
+        console.log(this.id)
+        if (this.textContent == 'On') {
+            this.textContent = 'Off'
+          } else {
+            this.textContent = 'On'
+          }
+    } else if (this.id == 'tv_action') {
+        console.log(this.id)
+
+        if (this.textContent == 'Play') {
+            this.textContent = 'Pause'
+            //Start video code goes here
+          } else {
+            this.textContent = 'Play'
+            //play video code goes here
+          }
+    } else if (this.id == 'tv_info') {
+        console.log(this.id)
+
+        window.alert('Info requested..')
+    }
+  }
 
 function makeTV() {
     const tv_container = document.getElementById('tv-container');
@@ -528,7 +552,9 @@ function makeTV() {
     tv_btn_action.textContent = 'Play'
 
     //button actions changes
-
+    tv_btn_pwr.onclick = tvBtnAction
+    tv_btn_action.onclick = tvBtnAction
+    tv_btn_info.onclick = tvBtnAction
 
 }
 

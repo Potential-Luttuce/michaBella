@@ -1,45 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Test | Custom Alerts</title>
-  <style>
-    body,
-    html {
-      background-color: #454545;
-    }
-    button {
-      background-color: #0085ff;
-      color: aliceblue;
-      font-size: 30px;
-    }
-    body {
-      display: flex;
-    }
-    
-  </style>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script>
-   
-    function changeText() {
-      const pwr_btn = document.getElementById('power-btn')
-      if (pwr_btn.textContent == 'On') {
-        pwr_btn.textContent = 'Off'
-      } else {
-        pwr_btn.textContent = 'On'
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Style Links -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- SweetAlert2 Library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <!-- Custom Styling for SweetAlert -->
+     <style>
+      /* Full-screen alert style */
+      .swal-wide .swal2-popup {
+          width: 100% !important;
+          height: 100% !important;
+          max-width: 100vw;
+          max-height: 100vh;
+          border-radius: 0;
+          background-color: #000000; /* Change to desired background color */
       }
-    }
-
-  </script>
+      .swal-wide .swal2-title,
+      .swal-wide .swal2-content {
+          color: #333333; /* Text color */
+      }
+  </style>
 </head>
 <body>
-  <button id="power-btn" onclick="changeText()">On</button>
+    <div id="headerContainer">
+        <div id="header-txt">
+            <div id="text">
+                <div id="textBox" style="font-size: 48px;">Hey!</div>
+                <p>Hi Baby! I put this site together to showcase some of my favorite memories with you.
+                    <br><br> Hope you enjoy! <br>- Mike
+                </p>
+            </div>
+        </div>
+        <img src="images/MB header.JPG" alt="Header Image" class="header-image">
+    </div>
+    <div id="messageContainer">
+        <div class="card-info">
+            What are you waiting for?<br>
+            <p style="font-size: 12px;" class="circleContainer">
+                (Click The Heart To Continue)</p>
+        </div>
+        <a href="html/homePage.html" id="heart"></a>
+        <audio id="backgroundMusic" src="/Users/michaelcuesta/repos/michaBella/audio/best-part-of-life.mp3"></audio>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Load SweetAlert and play music, then start animations
+        window.onload = function() {
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            
+            // Full-screen SweetAlert prompt with custom background color
+            Swal.fire({
+                text: 'Click Me',
+                customClass: {
+                    popup: 'swal-wide'  // Apply the custom styling class
+                },
+                showConfirmButton: true,
+                confirmButtonText: 'Start'
+            }).then((result) => {
+                if (result.isDenied) {
+                    window.location.href = '../index.html';
+                } else {
+                    // Attempt to play music after user interaction with SweetAlert
+                    backgroundMusic.play().catch(error => {
+                        console.log("Playback prevented by browser's autoplay policy. User interaction may be required.");
+                    }).then(() => {
+                        // After music starts, initiate animations
+                        loadFunctions();
+                    });
+                }
+            });
+        };
+
+        // Function to start animations
+        function loadFunctions() {
+            heart();
+            displayMichabella();
+        }
+
+        // Animation for heart element
+        function heart() {
+            console.log('Heart function has been loaded');
+            const heart = document.querySelector('#heart');
+            heart.addEventListener('mouseover', function() {
+                heart.classList.add('animate__animated', 'animate__bounce');
+            });
+
+            heart.addEventListener('mouseout', function() {
+                heart.classList.remove('animate__animated', 'animate__bounce');
+            });
+        }
+
+        // Display animation for gallery element
+        function displayMichabella() {
+            const container = document.querySelector('#header-txt');
+            const gallery = document.createElement('div');
+            gallery.classList.add('gallery', 'animate__animated', 'animate__fadeInLeftBig');
+
+            gallery.style.backgroundImage = 'url("images/Michabella.jpg")';
+            gallery.style.backgroundSize = 'cover';
+            gallery.style.backgroundPosition = 'top';
+            gallery.style.backgroundRepeat = 'no-repeat';
+
+            container.appendChild(gallery);
+        }
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-

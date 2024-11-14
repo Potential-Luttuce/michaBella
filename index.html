@@ -9,20 +9,22 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- SweetAlert2 Library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-<body onload="loadFunctions()">
-    <!-- <div id="navBar">Nav</div> -->
+<body>
     <div id="headerContainer">
         <div id="header-txt">
-            <div id="text"><div id="textBox" style="font-size: 48px;">Hey!</div>
-            <p>Hi Baby! I put this site together to showcase some of my favorite 
-                memories with you.
-                <br><br> Hope you enjoy! <br>- Mike
-            </p></div>
+            <div id="text">
+                <div id="textBox" style="font-size: 48px;">Hey!</div>
+                <p>Hi Baby! I've been working on this project for some time. The last 4 years with you have
+                    been so special and I wanted to pick out some of my favorite moments with you. 
+                    I've gathered moments that made me laugh and love you deeply, I hope they make you feel the same way :)
+                    <br><br> Hope you enjoy! <br>- Mike
+                </p>
+            </div>
         </div>
         <img src="images/MB header.JPG" alt="Header Image" class="header-image">
-        <!-- <img src="https://photos.google.com/photo/AF1QipOBqPQ92py7tSV-plqx6f-IGoQtIN3d-YHhgeK1"
-        alt="Header Image"> -->
     </div>
     <div id="messageContainer">
         <div class="card-info">
@@ -31,40 +33,64 @@
                 (Click The Heart To Continue)</p>
         </div>
         <a href="html/homePage.html" id="heart"></a>
+        <audio id="backgroundMusic" src="/Users/michaelcuesta/repos/michaBella/audio/best-part-of-life.mp3"></audio>
     </div>
+
     <!-- Scripts -->
     <script>
-        console.log('Welcome to my Site. MC');
+        // Load SweetAlert and play music, then start animations
+        window.onload = function() {
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            
+            // First SweetAlert prompt
+            Swal.fire({
+                text: 'Click Me'
+            }).then((result) => {
+                if (result.isDenied) {
+                    window.location.href = '../index.html';
+                } else {
+                    // Attempt to play music after user interaction with SweetAlert
+                    backgroundMusic.play().catch(error => {
+                        console.log("Playback prevented by browser's autoplay policy. User interaction may be required.");
+                    }).then(() => {
+                        // After music starts, initiate animations
+                        loadFunctions();
+                    });
+                }
+            });
+        };
+
+        // Function to start animations
         function loadFunctions() {
             heart();
-            displayMichabella()
+            displayMichabella();
         }
+
+        // Animation for heart element
         function heart() {
-            console.log('Heart function has been loaded')
+            console.log('Heart function has been loaded');
             const heart = document.querySelector('#heart');
             heart.addEventListener('mouseover', function() {
-                heart.classList.add('animate__animated');
-                heart.classList.add('animate__bounce');
+                heart.classList.add('animate__animated', 'animate__bounce');
             });
 
             heart.addEventListener('mouseout', function() {
-                heart.classList.remove('animate__animated');
-                heart.classList.remove('animate__bounce');
+                heart.classList.remove('animate__animated', 'animate__bounce');
             });
         }
+
+        // Display animation for gallery element
         function displayMichabella() {
-            const container = document.querySelector('#header-txt')
-            const gallery = document.createElement('div')
-            gallery.classList.add('gallery')
-            gallery.classList.add('animate__animated');
-            gallery.classList.add('animate__fadeInLeftBig');
+            const container = document.querySelector('#header-txt');
+            const gallery = document.createElement('div');
+            gallery.classList.add('gallery', 'animate__animated', 'animate__fadeInLeftBig');
 
             gallery.style.backgroundImage = 'url("images/Michabella.jpg")';
             gallery.style.backgroundSize = 'cover';
             gallery.style.backgroundPosition = 'top';
             gallery.style.backgroundRepeat = 'no-repeat';
 
-            container.appendChild(gallery)
+            container.appendChild(gallery);
         }
     </script>
 </body>

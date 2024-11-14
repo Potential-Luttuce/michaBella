@@ -12,28 +12,38 @@
 <!-- BELOW LOADS SWEETALERT library for customazied window alerts -->
     <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>
-            console.log('Welcome to the HomePage. MC')
-            function customAlert() {
-                let message = `This site may cause side effects 
-                inculding but not limited to:
-                Increased feelings of love,
-                Joy, Happy tears,
-                Wanting to kiss Michael,
-                Feeling cared for and appreciated. 
-                `
-                Swal.fire({
-                    icon: 'warning',
-                    title: 'Woah Slow down there!!',
-                    text: message
-                }).then((result) => {
-                    if (result.isDenied) {
-                        window.location.href= '../index.html'
-                    }
-                })
-            }
+            window.onload = function() {
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            
+            // First SweetAlert to prompt the user to "Click Me"
+            Swal.fire({
+                text: 'Click Me'
+            }).then((result) => {
+                if (result.isDenied) {
+                    window.location.href = '../index.html';
+                } else {
+                    // Attempt to play music after user interaction
+                    backgroundMusic.play().catch(error => {
+                        console.log("Playback prevented by browser's autoplay policy. User interaction may be required.");
+                    }).then(() => {
+                        // Second SweetAlert to display your custom message
+                        Swal.fire({
+                            icon: 'warning',
+                            title: 'Woah Slow down there!!',
+                            text: `This site may cause side effects including but not limited to:
+                            Increased feelings of love,
+                            Joy, Happy tears,
+                            Wanting to kiss Michael,
+                            Feeling cared for and appreciated.`
+                        });
+                    });
+                }
+            });
+        };
         </Script>
 </head>
-<body onload="customAlert()">
+<!-- <body onload="customAlert()"> -->
+<body>
     <div id="home-sideBar">
         <a id="indexBtn" href="../index.html">Welcome Page</a>
         <div style="text-align: center;">
@@ -50,5 +60,6 @@
         <img src="../images/MB.JPG" alt="Flowers" class="header-image">
         <!-- <div id="pageContent"></div> -->
     </div>
+    <audio id="backgroundMusic" src="../audio/like-a-prayer.mp3"></audio>
 </body>
 </html>

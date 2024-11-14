@@ -488,6 +488,9 @@ desc: `I love you as if we were two fire flies doing a mating dance by the water
 
 ]
 //////////////////////// MAKE TV & BUTTONS
+const infoClicked = () => {
+    alert('ayoooo')
+}
 function tvBtnAction() {
     const tv_video = document.getElementById('tv_video')
     const pwr_btn = document.getElementById('tv_pwr')
@@ -515,7 +518,7 @@ function tvBtnAction() {
             tv_video.pause(); // Plays the video
           }
     } else if (this.id == 'tv_info') {
-        window.alert('Info requested..')
+        infoClicked()
     } else if (this.id == 'tv_vid_src') {
         if (this.textContent == 'Mike Video') {
             this.textContent = 'Bella Video'
@@ -580,7 +583,6 @@ function makeTV() {
 
 }
 
-
 function loadAllContent(year) {
     //Load years for card data
     if (year == 2020) {
@@ -596,6 +598,7 @@ function loadAllContent(year) {
     }
     //load year for media data
     makeTV()
+    //load Nav button for TV?
 }
 // const fake = [
 //     { id: 'card20', title: '', img: '../../images/2024/.jpg',

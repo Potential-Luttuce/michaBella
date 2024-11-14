@@ -167,11 +167,6 @@ html {
     width: 100%;
     height:fit-content;
 }
-.antena {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 .tv-box {
     border: 3px solid rgb(138, 111, 76);
     background-color: burlywood;

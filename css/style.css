@@ -12,6 +12,9 @@ html {
     background: #D7C5DF;
     color: white;
 }
+.hidden {
+    display: none;
+}
 /* SideBar ####################################################################### */
 
 #main-sideBar {
@@ -181,12 +184,18 @@ html {
     border-radius: 20px;
     
 }
-.tv-screen {
+#tv-screen {
     border: 2pc solid black;
     width: 700px;
     height: 500px;
     background-color: rgb(23, 23, 23);
     border-radius: 1pc;
+    overflow: hidden;
+}
+#tv_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fills the container while maintaining aspect ratio */
 }
 .tv-btn-container {
     display: flex;

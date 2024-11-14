@@ -1,6 +1,5 @@
 // const cardData = require('./cardsData.js');
 
-console.log('Welcome to the year of Covid. MC')
 // SweetAert ////////////////////////////////////////////////////////////////
     function robots() {
             Swal.fire({
@@ -490,33 +489,42 @@ desc: `I love you as if we were two fire flies doing a mating dance by the water
 ]
 //////////////////////// MAKE TV & BUTTONS
 function tvBtnAction() {
+    const tv_video = document.getElementById('tv_video')
+    const pwr_btn = document.getElementById('tv_pwr')
     if (this.id == 'tv_pwr') {
         if (this.textContent == 'On') {
+            tv_video.classList.toggle('hidden')
             this.textContent = 'Off'
             this.style.backgroundColor = 'Red'
             //off code here
           } else {
+            tv_video.classList.toggle('hidden')
             this.textContent = 'On'
             this.style.backgroundColor = 'Green'
             //on code here
           }
     } else if (this.id == 'tv_action') {
         if (this.textContent == 'Play >') {
+            if (pwr_btn.textContent == 'On') {
+                tv_video.play(); // Plays the video
+            }
             this.textContent = 'Pause ||'
-            //Start video code goes here
           } else {
+
             this.textContent = 'Play >'
-            //play video code goes here
+            tv_video.pause(); // Plays the video
           }
     } else if (this.id == 'tv_info') {
         window.alert('Info requested..')
     } else if (this.id == 'tv_vid_src') {
         if (this.textContent == 'Mike Video') {
             this.textContent = 'Bella Video'
-            //off code here
+            tv_video.src = ''
+            tv_video.src = '../../video/2020_mike_video.mov'
           } else {
             this.textContent = 'Mike Video'
-            //on code here
+            tv_video.src = ''
+            tv_video.src = '../../video/2020_bella_video.mov'
           }
     }
   }
@@ -530,9 +538,11 @@ function makeTV() {
     const tv_btn_info = document.createElement('button')
     const tv_btn_action = document.createElement('button') //play-pause
     const tv_btn_video_src = document.createElement('button')// displays / sets video src
-    
+    //create const for video element
+    const tv_video = document.createElement('video')
+
     tv_box.classList.add('tv-box');
-    tv_screen.classList.add('tv-screen');
+    tv_screen.id = 'tv-screen';
     tv_btn_container.classList.add('tv-btn-container');
     tv_btn_pwr.classList.add('tv-btns');
     tv_btn_pwr.id = 'tv_pwr'
@@ -542,6 +552,10 @@ function makeTV() {
     tv_btn_action.id = 'tv_action'
     tv_btn_video_src.classList.add('tv-btns');
     tv_btn_video_src.id = 'tv_vid_src'
+    tv_video.id = 'tv_video'
+    tv_video.classList.add('hidden')
+    tv_video.src = ''
+    
 
     tv_btn_pwr.textContent = 'Off'
     tv_btn_pwr.style.backgroundColor = 'Red'
@@ -551,15 +565,13 @@ function makeTV() {
 
     tv_container.appendChild(tv_box);
     tv_box.appendChild(tv_screen);
+    tv_screen.appendChild(tv_video)
+    tv_box.appendChild(tv_btn_video_src)
     tv_box.appendChild(tv_btn_container)
     tv_btn_container.appendChild(tv_btn_info)
     tv_btn_container.appendChild(tv_btn_action)
-    tv_btn_container.appendChild(tv_btn_video_src)
     tv_btn_container.appendChild(tv_btn_pwr)
     
-
-    
-
     //button actions changes
     tv_btn_pwr.onclick = tvBtnAction
     tv_btn_action.onclick = tvBtnAction

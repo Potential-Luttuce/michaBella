@@ -24,18 +24,6 @@
     }
 
 // JS FUNCTIONS TO DYNAMICLY CREATE CARDS/////////////////////////////////////
-
-//MAKES SINGLE CARD APPENDED TO PAGE
-// function makeCard(textContent, cardId, clickHandler) {
-//     const card = document.createElement('button');
-//     const page = document.querySelector('#pageContent');
-//     card.textContent = textContent;
-//     card.id = cardId;
-//     // Set onclick handler based on the provided function
-//     card.onclick = clickHandler;
-//     card.classList.add('Card');
-//     page.appendChild(card);
-// }
 function makeNewCard(textContent, cardId, img, clickHandler) {
     const page = document.querySelector('#pageContent') // all cards container
     const card = document.createElement('div') // single card
@@ -487,6 +475,7 @@ desc: `I love you as if we were two fire flies doing a mating dance by the water
 `},
 
 ]
+
 //////////////////////// MAKE TV & BUTTONS
 const infoClicked = () => {
     alert('ayoooo')
@@ -494,6 +483,8 @@ const infoClicked = () => {
 function tvBtnAction() {
     const tv_video = document.getElementById('tv_video')
     const pwr_btn = document.getElementById('tv_pwr')
+    const target_page = document.getElementById('target_page')
+
     if (this.id == 'tv_pwr') {
         if (this.textContent == 'On') {
             tv_video.classList.toggle('hidden')
@@ -523,11 +514,31 @@ function tvBtnAction() {
         if (this.textContent == 'Mike Video') {
             this.textContent = 'Bella Video'
             tv_video.src = ''
-            tv_video.src = '../../video/2020_mike_video.mov'
+            if (target_page.textContent == '2020') {
+                tv_video.src = '../../video/2020_mike_video.mov'
+            } else if (target_page.textContent == '2021') {
+                tv_video.src = '../../video/2020_mike_video.mov'
+            } else if (target_page.textContent == '2022') {
+                tv_video.src = '../../video/2020_mike_video.mov'
+            } else if (target_page.textContent == '2023') {
+                tv_video.src = '../../video/2020_mike_video.mov'
+            } else  {
+                tv_video.src = '../../video/2020_mike_video.mov'
+            }
           } else {
             this.textContent = 'Mike Video'
             tv_video.src = ''
-            tv_video.src = '../../video/2020_bella_video.mov'
+            if (target_page.textContent == '2020') {
+                tv_video.src = '../../video/2020_bella_video.mov'
+            } else if (target_page.textContent == '2021') {
+                tv_video.src = '../../video/2021_bella_video.mov'
+            } else if (target_page.textContent == '2022') {
+                tv_video.src = '../../video/2022_bella_video.mov'
+            } else if (target_page.textContent == '2023') {
+                tv_video.src = '../../video/2023_bella_video.mov'
+            } else  {
+                tv_video.src = '../../video/2024_bella_video.mov'
+            }
           }
     }
   }

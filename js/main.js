@@ -470,15 +470,18 @@ desc: `I love you as if we were two fire flies doing a mating dance by the water
 { id: 'card37', title: 'I mustache you a question..', img: '../../images/2024/wedding-2.jpeg',
     desc: `you love me? cus I love you! this wedding was so fun and yet AGAIN we threw it down on the dance floor good lord
 `},
-{ id: 'card29', title: '', img: '../../images/2024/wilson.jpeg',
+{ id: 'card29', title: '"plump"-kin ;)', img: '../../images/2024/wilson.jpeg',
     desc: `Our favorite little farm, you are my favorite pumpkin :)
+`},
+{ id: 'card29', title: 'Happy 4 Years <3', img: '../../images/2024/anniversary.jpeg',
+    desc: `Tonight has been perfect. Just like the last 4 years. I love you Bella. So so so much
 `},
 
 ]
 
 //////////////////////// MAKE TV & BUTTONS
 const infoClicked = () => {
-    alert('ayoooo')
+    alert(`Now you know why I wanted those videos so bad lol, your favorite and mine, lets see how they matched up!!`)
 }
 function tvBtnAction() {
     const tv_video = document.getElementById('tv_video')
@@ -517,13 +520,13 @@ function tvBtnAction() {
             if (target_page.textContent == '2020') {
                 tv_video.src = '../../video/2020_mike_video.mov'
             } else if (target_page.textContent == '2021') {
-                tv_video.src = '../../video/2020_mike_video.mov'
+                tv_video.src = '../../video/2021_mike_video.mov'
             } else if (target_page.textContent == '2022') {
-                tv_video.src = '../../video/2020_mike_video.mov'
+                tv_video.src = '../../video/2022_mike_video.mov'
             } else if (target_page.textContent == '2023') {
-                tv_video.src = '../../video/2020_mike_video.mov'
+                tv_video.src = '../../video/2023_mike_video.mov'
             } else  {
-                tv_video.src = '../../video/2020_mike_video.mov'
+                tv_video.src = '../../video/2024_mike_video.mov'
             }
           } else {
             this.textContent = 'Mike Video'
